@@ -1,0 +1,912 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_hero_split": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "Image hero split",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "/",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary"
+          }
+        },
+        "image_2": {
+          "type": "image",
+          "settings": {
+            "focal_point": "top",
+            "mobile_focal_point": "center",
+            "title": "Image hero split",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "/",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["image_1", "image_2"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 90,
+        "mobile_height": 75,
+        "text_position": "center",
+        "text_color": "#fcfcf9",
+        "button_background_color": "#faf7c3",
+        "button_text_color": "#242526",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "scrolling_content": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Announce your sale",
+            "link": ""
+          }
+        },
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon": "price-tag",
+            "icon_width": 50,
+            "icon_width_mobile": 50,
+            "link": ""
+          }
+        },
+        "image": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_size": 200,
+            "image_size_mobile": 200,
+            "link": ""
+          }
+        }
+      },
+      "block_order": ["text", "icon", "image"],
+      "settings": {
+        "font_choice": "ff-heading",
+        "text_font_class": "fs-body-300",
+        "duration": 10,
+        "direction": "reverse",
+        "gap": 100,
+        "padding_top": 22,
+        "padding_bottom": 23,
+        "borders": "top-bottom",
+        "text_color": "#faf7c3",
+        "background_color": "#242526",
+        "border_color": "#242526",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "spacer_1": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "spacer_2": {
+          "type": "spacer",
+          "settings": {
+            "space": 40
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--callout"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_1",
+        "accent",
+        "spacer_2",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_width": "full",
+        "custom_content_width": 1000
+      }
+    },
+    "collection_list_slider": {
+      "type": "collection-list-slider",
+      "settings": {
+        "heading": "Collections",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "columns": "4",
+        "mobile_columns": "2",
+        "collection_list": [],
+        "collection_listing_aspect_ratio": "portrait",
+        "label_style": "overlay",
+        "overlay_title_background_style": "solid",
+        "overlay_text_color": "#f7f7e8",
+        "overlay_title_background": "#242526",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "countdown_bar": {
+      "type": "countdown-bar",
+      "settings": {
+        "min_height": 60,
+        "min_height_mobile": 60,
+        "year": 2025,
+        "month": "december",
+        "day": "1",
+        "hour": "0",
+        "minute": "0",
+        "time_zone_selection": "shop",
+        "hide_timer_on_complete": false,
+        "timer_complete_message": "",
+        "heading": "Countdown bar",
+        "heading_tag": "h4",
+        "text": "<p>Use this timer to create urgency and boost sales.</p>",
+        "link": "",
+        "link_text": "Button",
+        "button_style": "btn--primary",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "text_color": "#242526",
+        "button_background_color": "#22292d",
+        "button_text_color": "#faf7c3",
+        "background_color": "#faf7c3",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_hero_1": {
+      "type": "image-hero",
+      "blocks": {
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Image hero",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Display a featured image with text about your brand, store, or products.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "link_text": "Read more",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["accent", "heading", "text", "button"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 80,
+        "mobile_height": 100,
+        "focal_point": "center",
+        "mobile_focal_point": "image_presentation",
+        "media_link": "",
+        "text_position": "flex-start_flex-end",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.35) 4%, rgba(9, 9, 9, 0.52) 49%, rgba(0, 0, 0, 1) 98%)",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "featured_collection_slider_1": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "",
+            "collection_name": "Collection"
+          }
+        },
+        "product_list": {
+          "type": "product_list",
+          "disabled": true,
+          "settings": {
+            "product_list": [],
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": ["collection", "product_list"],
+      "settings": {
+        "heading": "Featured collection",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "Shop collection",
+        "maximum_products": 6,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "sales_banner": {
+      "type": "sales-banner",
+      "settings": {
+        "min_height": 460,
+        "min_height_mobile": 500,
+        "sale_type": "Up to *",
+        "sale_amount": "50% off",
+        "sale_unit": "none",
+        "terms_and_conditions": "* Optional note and T&C",
+        "terms_vertical_offset": 20,
+        "sale_font_size": 136,
+        "sale_font_size_mobile": 114,
+        "currency_symbol_position": "before",
+        "heading": "Announce your sale",
+        "heading_tag": "h2",
+        "heading_font_class": "fs-heading-2-base",
+        "text": "<p>Highlight sale campaigns, discounts, and promotions.</p>",
+        "link": "",
+        "link_text": "Button",
+        "button_style": "btn--primary",
+        "link_2": "",
+        "link_text_2": "",
+        "button_style_2": "btn--secondary",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "center",
+        "text_color": "#fcfcf9",
+        "button_background_color": "#faf7c3",
+        "button_text_color": "#242526",
+        "background_color": "#242526",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 61,
+        "layout": "two-columns",
+        "enable_animation": true,
+        "show_frame": false,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "shoppable_feature": {
+      "type": "shoppable-feature",
+      "blocks": {
+        "hotspot_1": {
+          "type": "hotspot",
+          "settings": {
+            "product_item": "",
+            "horizontal_position": 46,
+            "vertical_position": 68
+          }
+        },
+        "hotspot_2": {
+          "type": "hotspot",
+          "settings": {
+            "product_item": "",
+            "horizontal_position": 74,
+            "vertical_position": 32
+          }
+        }
+      },
+      "block_order": ["hotspot_1", "hotspot_2"],
+      "settings": {
+        "image_position": "left",
+        "image_size": 50,
+        "aspect_ratio": "portrait_alt",
+        "heading": "Shoppable image",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "Shop now",
+        "button_style": "btn--callout",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-bottom-only",
+        "content_position_desktop": "inside"
+      }
+    },
+    "video_hero": {
+      "type": "video-hero",
+      "blocks": {
+        "spacer_1": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "accent": {
+          "type": "accent",
+          "settings": {
+            "accent": "Accent"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Video Hero",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "spacer_2": {
+          "type": "spacer",
+          "settings": {
+            "space": 12
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Display an autoplay video (without sound) paired with promotional text.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "spacer_1",
+        "accent",
+        "heading",
+        "spacer_2",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 90,
+        "mobile_height": 90,
+        "media_link": "",
+        "focal_point": "image_presentation",
+        "focal_point_mobile": "image_presentation",
+        "text_position": "flex-start_flex-start",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 40,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "grid": {
+      "type": "grid",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "width": "50",
+            "height": 800,
+            "mobile_height": 700,
+            "media_fit": "cover",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_center",
+            "accent": "Accent",
+            "title": "Grid item",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-1-base",
+            "subheading": "",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "<p>Perfect for lookbooks and editorial photography</p>",
+            "text_font_class": "fs-body-100",
+            "link": "/",
+            "link_text": "Shop now",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#ffffff",
+            "button_background_color": "#faf7c3",
+            "button_text_color": "#242526",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 20
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "width": "50",
+            "height": 800,
+            "mobile_height": 700,
+            "media_fit": "cover",
+            "focal_point": "center",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_center",
+            "accent": "Accent",
+            "title": "Grid item",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-1-base",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "<p>Perfect for lookbooks and editorial photography</p>",
+            "text_font_class": "fs-body-100",
+            "link": "/",
+            "link_text": "Shop now",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#ffffff",
+            "button_background_color": "#faf7c3",
+            "button_text_color": "#242526",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 20
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2"],
+      "settings": {
+        "heading": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "content_alignment": "center",
+        "enable_animation": true,
+        "full_width": true,
+        "spacing": 24,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "featured_collection_slider_2": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_1": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "",
+            "collection_name": "Collection"
+          }
+        },
+        "collection_2": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "",
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": ["collection_1", "collection_2"],
+      "settings": {
+        "heading": "Featured collections",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 6,
+        "columns": "3",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "quotes": {
+      "type": "quote",
+      "blocks": {
+        "quote_1": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>“Add a quote from a customer or press about your store and products.”</p>",
+            "title": "Source",
+            "quote_tag": "h4",
+            "font_size": "medium"
+          }
+        },
+        "quote_2": {
+          "type": "quote",
+          "settings": {
+            "quote": "<p>“Add a quote from a customer or press about your store and products.”</p>",
+            "title": "Source",
+            "quote_tag": "h4",
+            "font_size": "medium"
+          }
+        }
+      },
+      "block_order": ["quote_1", "quote_2"],
+      "settings": {
+        "autoplay_enabled": true,
+        "autoplay_delay": 7,
+        "pagination_style": "logos",
+        "font_choice": "heading",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_hero_2": {
+      "type": "image-hero",
+      "blocks": {
+        "text_1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Text</p>",
+            "text_font_class": "fs-body-200"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Video hero",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-1"
+          }
+        },
+        "text_2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Display an autoplay video (without sound) paired with promotional text</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--secondary"
+          }
+        }
+      },
+      "block_order": ["text_1", "heading", "text_2", "button"],
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 90,
+        "mobile_height": 90,
+        "focal_point": "center",
+        "mobile_focal_point": "center",
+        "media_link": "",
+        "text_position": "flex-start_flex-start",
+        "text_position_mobile": "center_center",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35) 80%, rgba(0, 0, 0, 0) 100%)",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-top-only"
+      }
+    },
+    "multi_column_1": {
+      "type": "multi-column",
+      "blocks": {
+        "column": {
+          "type": "column",
+          "settings": {
+            "accent": "Accent",
+            "heading": "Column",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-1-base",
+            "text": "<p>Use columns with text, images, or icons to focus on features of your product or store.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "Button",
+            "button_style": "btn--callout"
+          }
+        },
+        "image": {
+          "type": "image_column",
+          "settings": {
+            "image_width": 100,
+            "aspect_ratio": "natural",
+            "enable_image_crop_circle": false,
+            "focal_point": "image_presentation",
+            "image_position": "above_text",
+            "image_link": "",
+            "small_caption": "",
+            "accent": "",
+            "heading": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column": {
+          "type": "icon_column",
+          "disabled": true,
+          "settings": {
+            "icon": "plant",
+            "icon_width": 50,
+            "icon_width_mobile": 50,
+            "accent": "",
+            "heading": "Column with icon",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post.</p>",
+            "text_font_class": "fs-body-100",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": ["column", "image", "icon_column"],
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "left",
+        "content_vertical_alignment": "top",
+        "content_background_padding": "large",
+        "columns": "2",
+        "column_spacing": 48,
+        "row_spacing": 48,
+        "column_alignment": "left",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "#f7f7e8",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "blog_posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "article_1": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        },
+        "article_2": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        }
+      },
+      "block_order": ["article_1", "article_2"],
+      "settings": {
+        "heading": "Blog posts",
+        "subheading": "",
+        "button_link": "",
+        "link_text": "View all posts",
+        "display_type": "all",
+        "blog": "",
+        "max_articles": 2,
+        "show_tags": true,
+        "show_author": false,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_featured_image": true,
+        "aspect_ratio": "square",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "multi_column_2": {
+      "type": "multi-column",
+      "blocks": {
+        "icon_column_1": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 24,
+            "icon_width_mobile": 20,
+            "accent": "",
+            "heading": "Column with icon",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_2": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 24,
+            "icon_width_mobile": 20,
+            "accent": "",
+            "heading": "Column with icon",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_3": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 24,
+            "icon_width_mobile": 20,
+            "accent": "",
+            "heading": "Column with icon",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        },
+        "icon_column_4": {
+          "type": "icon_column",
+          "settings": {
+            "icon": "plant",
+            "icon_width": 24,
+            "icon_width_mobile": 20,
+            "accent": "",
+            "heading": "Column with icon",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-4-base",
+            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
+            "text_font_class": "fs-body-75",
+            "text_max_width": 100,
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon_column_1",
+        "icon_column_2",
+        "icon_column_3",
+        "icon_column_4"
+      ],
+      "settings": {
+        "title": "",
+        "heading_tag": "h2",
+        "subheading": "",
+        "heading_font_class": "fs-heading-3-base",
+        "heading_alignment": "center",
+        "content_vertical_alignment": "center",
+        "content_background_padding": "medium",
+        "columns": "4",
+        "column_spacing": 28,
+        "row_spacing": 28,
+        "column_alignment": "center",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "column_spacing_mobile": 20,
+        "row_spacing_mobile": 20,
+        "column_alignment_mobile": "left",
+        "background_behind_columns": false,
+        "background_color": "#f7f7e8",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    }
+  },
+  "order": [
+    "image_hero_split",
+    "scrolling_content",
+    "rich_text",
+    "collection_list_slider",
+    "countdown_bar",
+    "image_hero_1",
+    "featured_collection_slider_1",
+    "sales_banner",
+    "shoppable_feature",
+    "video_hero",
+    "grid",
+    "featured_collection_slider_2",
+    "quotes",
+    "image_hero_2",
+    "multi_column_1",
+    "blog_posts",
+    "multi_column_2"
+  ]
+}
