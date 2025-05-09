@@ -198,12 +198,7 @@
                 </div>
               {%- endfor -%}
               {%- if settings.enable_cross_sells -%}
-                {%-
-                  render 'cross-sells',
-                  cart: cart,
-                  cart_items: cart.items,
-                  is_slider: true,
-                -%}
+                {%- render 'cross-sells', cart: cart, cart_items: cart.items, is_slider: true -%}
               {%- endif -%}
             </div>
             <div class="quick-cart__footer animation--quick-cart-footer">
@@ -289,23 +284,24 @@
                   {{ section.settings.promotion_text }}
                 </div>
               {%- endif -%}
+
               {%- for collection in section.settings.collection_list -%}
-                {%-
-                  render 'button-block',
-                  wrapper_class: "quick-cart__empty-state-promo-button",
+                {%- render 'button-block',
+                  wrapper_class: 'quick-cart__empty-state-promo-button',
                   link: collection.url,
                   label: collection.title,
                   button_style: section.settings.collection_list_button_style,
-                  button_alignment: 'center',
+                  button_alignment: 'center'
                 -%}
               {%- endfor -%}
             {%- else -%}
               {%- assign empty_label = 'cart.general.continue_shopping' | t -%}
+
               {%- render 'button-block',
                 wrapper_class: 'quick-cart__empty-state-promo-button',
-                link: routes.collections_url,
+                link: section.settings.continue_shopping_link,
                 label: empty_label,
-                button_style: 'btn--secondary',
+                button_style: section.settings.collection_list_button_style,
                 button_alignment: 'center'
               -%}
             {%- endif -%}
@@ -342,9 +338,17 @@
       "content": "t:sections.quick_cart.settings.header__promotion.content"
     },
     {
+      "id": "continue_shopping_link",
+      "type": "url",
+      "label": "t:sections.quick_cart.settings.promotion__continue_shopping_link.label",
+      "info": "t:sections.quick_cart.settings.promotion__continue_shopping_link.info",
+      "default": "/collections"
+    },
+    {
       "type": "richtext",
       "id": "promotion_text",
       "label": "t:sections.quick_cart.settings.promotion_text.label",
+      "info": "t:sections.quick_cart.settings.promotion_text.info",
       "default": "<p>Check out these collections.</p>"
     },
     {
@@ -356,6 +360,7 @@
       "type": "select",
       "id": "collection_list_button_style",
       "label": "t:sections.quick_cart.settings.collection_list_button_style.label",
+      "info": "t:sections.quick_cart.settings.collection_list_button_style.info",
       "default": "btn--secondary",
       "options": [
         {

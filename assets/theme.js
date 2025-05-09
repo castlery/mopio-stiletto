@@ -7994,6 +7994,7 @@ function PurchaseConfirmationPopup(node) {
   if (!node) return;
   const quickCartEnabled = Boolean(n$2(selectors$C.quickCart, document));
   const containerInner = n$2(selectors$C.containerInner, node);
+  const headerIsSticky = header.dataset.enableStickyHeader == "true";
   let purchaseConfirmationAnimation = null;
   if (shouldAnimate(node)) {
     purchaseConfirmationAnimation = animatePurchaseConfirmation(node);
@@ -8033,7 +8034,20 @@ function PurchaseConfirmationPopup(node) {
       open();
     });
   }
+  function _getFullHeaderHeight() {
+    const rootStyle = getComputedStyle(document.documentElement);
+    const headerHeight = parseFloat(rootStyle.getPropertyValue("--height-header"));
+    const announcementHeight = parseFloat(rootStyle.getPropertyValue("--announcement-height"));
+    return headerHeight + announcementHeight;
+  }
   function open() {
+    if (!headerIsSticky) {
+      if (window.scrollY > _getFullHeaderHeight()) {
+        containerInner.classList.add("fixed");
+      } else {
+        containerInner.classList.remove("fixed");
+      }
+    }
     u$1(node, classes$e.active);
     if (shouldAnimate(node)) {
       purchaseConfirmationAnimation.animate();
@@ -13644,7 +13658,7 @@ backToTop();
 
 // Make it easy to see exactly what theme version
 // this is by commit SHA
-window.SHA = "40df2a2c3c";
+window.SHA = "d78db2335e";
 if (!sessionStorage.getItem("flu_stat_recorded") && !((_window$Shopify = window.Shopify) !== null && _window$Shopify !== void 0 && _window$Shopify.designMode)) {
   var _window$Shopify2, _window$Shopify3;
   // eslint-disable-next-line no-process-env

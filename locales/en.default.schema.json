@@ -1468,13 +1468,32 @@
     "main_cart": {
       "name": "Cart page",
       "settings": {
+        "collection_list": {
+          "info": "A maximum of 4 collections will be shown",
+          "label": "Collection list"
+        },
+        "collection_list_button_style": {
+          "info": "Applies to the \"Continue shopping\" link and the collection buttons.",
+          "label": "Collection button style"
+        },
         "cross_sells_position": {
           "label": "Position",
           "option_1": "Below subtotal",
           "option_2": "Below line items"
         },
+        "header__promotion": {
+          "content": "Empty cart promotion"
+        },
+        "promotion__continue_shopping_link": {
+          "info": "If no collections are selected below, then a \"Continue shopping\" button will display.",
+          "label": "\"Continue shopping\" link"
+        },
         "header__product": {
           "content": "Product items"
+        },
+        "promotion_text": {
+          "info": "Will only display if collections are selected below.",
+          "label": "Text"
         },
         "paragraph__cross_sells": {
           "content": "The configuration of cross sells can be found in the \"Cart\" area of the theme settings."
@@ -2862,6 +2881,7 @@
           "label": "Collection list"
         },
         "collection_list_button_style": {
+          "info": "Applies to the \"Continue shopping\" link and the collection buttons.",
           "label": "Collection button style"
         },
         "enable_quick_cart": {
@@ -2874,7 +2894,12 @@
         "header__promotion": {
           "content": "Empty cart promotion"
         },
+        "promotion__continue_shopping_link": {
+          "info": "If no collections are selected below, then a \"Continue shopping\" button will display.",
+          "label": "\"Continue shopping\" link"
+        },
         "promotion_text": {
+          "info": "Will only display if collections are selected below.",
           "label": "Text"
         },
         "show_product_currency": {

@@ -291,15 +291,35 @@
         <div class="cart__empty-message supports-cookies">
           <h1 class="cart__empty-message-heading ff-heading fs-heading-2-base">{{ 'cart.general.empty' | t }}</h1>
           <p class="cart__empty-message-text fs-body-100">{{ 'cart.general.empty_message' | t }}</p>
-          {%- assign empty_label = 'cart.general.continue_shopping' | t -%}
-          {%-
-            render 'button-block' with
-            wrapper_class: "cart__empty-button",
-            link: routes.collections_url,
-            label: empty_label,
-            button_style: "btn--secondary",
-            button_alignment: 'center'
-          -%}
+          {%- if section.settings.collection_list != blank -%}
+            {%- if section.settings.promotion_text != blank -%}
+              <div class="cart__empty-state-promot-text rte ff-body fs-body-100">
+                {{ section.settings.promotion_text }}
+              </div>
+            {%- endif -%}
+
+            <div class="cart__collection-buttons">
+              {%- for collection in section.settings.collection_list -%}
+                {%- render 'button-block',
+                  wrapper_class: 'cart__empty-button cart__collection-list-button',
+                  link: collection.url,
+                  label: collection.title,
+                  button_style: section.settings.collection_list_button_style,
+                  button_alignment: 'center'
+                -%}
+              {%- endfor -%}
+            </div>
+          {%- else -%}
+            {%- assign empty_label = 'cart.general.continue_shopping' | t -%}
+
+            {%- render 'button-block',
+              wrapper_class: 'cart__empty-button cart__continue-shopping-button',
+              link: section.settings.continue_shopping_link,
+              label: empty_label,
+              button_style: section.settings.collection_list_button_style,
+              button_alignment: 'center'
+            -%}
+          {%- endif -%}
         </div>
 
         {% comment %}
@@ -331,6 +351,46 @@
       "type": "checkbox",
       "label": "t:sections.main_cart.settings.show_product_currency.label",
       "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main_cart.settings.header__promotion.content"
+    },
+    {
+      "id": "continue_shopping_link",
+      "type": "url",
+      "label": "t:sections.main_cart.settings.promotion__continue_shopping_link.label",
+      "info": "t:sections.main_cart.settings.promotion__continue_shopping_link.info",
+      "default": "/collections"
+    },
+    {
+      "type": "richtext",
+      "id": "promotion_text",
+      "label": "t:sections.main_cart.settings.promotion_text.label",
+      "info": "t:sections.main_cart.settings.promotion_text.info",
+      "default": "<p>Check out these collections.</p>"
+    },
+    {
+      "id": "collection_list",
+      "type": "collection_list",
+      "label": "t:sections.main_cart.settings.collection_list.label"
+    },
+    {
+      "type": "select",
+      "id": "collection_list_button_style",
+      "label": "t:sections.main_cart.settings.collection_list_button_style.label",
+      "info": "t:sections.main_cart.settings.collection_list_button_style.info",
+      "default": "btn--secondary",
+      "options": [
+        {
+          "value": "btn--primary",
+          "label": "t:shared.settings.button_style.option_solid"
+        },
+        {
+          "value": "btn--secondary",
+          "label": "t:shared.settings.button_style.option_outline"
+        }
+      ]
     },
     {
       "type": "header",

@@ -7,14 +7,18 @@
       - links: { Object } The linklists[menu].linkslinks or linklists[secondary_menu].links passed through from the header.
 
     Optional parameters:
-      - parents_only: { Boolean } Will not show nested menus if true, ex. in secondary links in the drawer-menu.
+      - parents_only: { Boolean: false } Whether to include any child links of the current level.
+        - Eg. used for secondary links in the menu drawer
       - depth: { Number } Tracking menu depth per iteration of the drawer-menu-list snippet.
-      - has_mobile_menu_images: { Boolean } If true, links within the verified menu handle will show images.
-      - mobile_menu_image_blocks: { Object } Passing in only the blocks that enable menu images to iterate over.
-      - second_level_mobile_menu_image_link_handles: { Object } All second level menu handles to iterate and apply specific block settings.
-      - mobile_menu_image_aspect_ratio: { String } Passes the specific block style settings. Can be:
-        - Natural, Square, Portrait, Landscape
-      - mobile_menu_image_width: { Number } Passes the specific block style settings.
+      - has_mobile_menu_images: { Boolean } Whether links should show an image (determined by "Mobile menu image" blocks).
+      - mobile_menu_image_blocks: { Object } An array of "Mobile menu image" blocks.
+      - mobile_menu_image_link_handles: { Object } A list of all link handles that have a mobile menu image block.
+      - mobile_menu_image_aspect_ratio: { String } The aspect ratio of mobile menu images. Can be:
+        - 'natural'
+        - 'square'
+        - 'portrait'
+        - 'landscape'
+      - mobile_menu_image_width: { Number } The width (in pixels) of mobile menu images.
   endcomment
 
   assign handleized_featured_link_label = featured_link_label | handleize
@@ -32,13 +36,12 @@
     assign child_mobile_menu_image_aspect_ratio = blank
     assign child_mobile_menu_image_width = blank
 
-    if menu_depth == 1 and second_level_mobile_menu_image_link_handles contains link.handle
-      assign child_has_mobile_menu_images = true
-
+    if mobile_menu_image_link_handles contains link.handle
       for block in mobile_menu_image_blocks
         assign current_menu_handle = block.settings.menu_name | handle
 
         if current_menu_handle == link.handle
+          assign child_has_mobile_menu_images = true
           assign child_mobile_menu_image_aspect_ratio = block.settings.aspect_ratio
           assign child_mobile_menu_image_width = block.settings.thumbnail_width
           break
@@ -138,7 +141,9 @@
           depth: menu_depth,
           has_mobile_menu_images: child_has_mobile_menu_images,
           mobile_menu_image_aspect_ratio: child_mobile_menu_image_aspect_ratio,
-          mobile_menu_image_width: child_mobile_menu_image_width
+          mobile_menu_image_width: child_mobile_menu_image_width,
+          mobile_menu_image_link_handles: mobile_menu_image_link_handles,
+          mobile_menu_image_blocks: mobile_menu_image_blocks
         %}
       </ul>
     {%- endif -%}

@@ -2515,13 +2515,43 @@ html:not(.no-js) body.template-password header.header--transparent .header__inne
 .cart__empty-message{
   text-align:center;
 }
-.cart__empty-button{
+.cart__continue-shopping-button{
   margin-top:calc(4px * 7);
   margin-top:var(--spacing-7);
 }
 .cart__empty-message-text{
   margin-top:calc(4px * 2);
   margin-top:var(--spacing-2);
+}
+.cart__empty-message .cart__empty-state-promot-text{
+  margin-top:calc(4px * 5);
+  margin-top:var(--spacing-5);
+}
+.cart__collection-buttons{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-gap:calc(4px * 2);
+  grid-gap:var(--spacing-2);
+  gap:calc(4px * 2);
+  gap:var(--spacing-2);
+  justify-content:center;
+  margin:calc(4px * 4) auto 0;
+  margin:var(--spacing-4) auto 0;
+  max-width:560px;
+}
+@media (min-width: 480px){
+.cart__collection-buttons{
+    grid-template-columns:repeat(2, 1fr)
+}
+  }
+@media (min-width: 480px){
+.cart__collection-buttons > *:only-child{
+      grid-column:1 / -1
+  }
+    }
+.cart__collection-list-button .btn{
+  width:100%;
+  max-width:280px;
 }
 .cart__form-item-title + .cart__form-item-variant,
   .cart__form-item-title + .cart__form-item-subscriptions{
@@ -7784,6 +7814,13 @@ body.header-transparent #main > .shopify-section:first-child .collection-banner_
     width:calc(100vw - (3.3vw * 2));
     width:calc(100vw - (var(--space-outer) * 2))
 }
+  }
+.purchase-confirmation-popup__inner.fixed{
+    position:fixed;
+    top:3.3vw;
+    top:var(--space-outer);
+    right:3.3vw;
+    right:var(--space-outer);
   }
 .purchase-confirmation-popup__item{
   display:flex;

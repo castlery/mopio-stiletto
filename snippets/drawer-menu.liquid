@@ -26,7 +26,7 @@
   endif
 
   assign has_first_level_mobile_menu_images = false
-  assign second_level_mobile_menu_image_link_handles = ''
+  assign mobile_menu_image_link_handles = ''
 
   for mobile_menu_image_block in mobile_menu_image_blocks
     if mobile_menu_image_block.settings.menu_name == blank
@@ -38,9 +38,11 @@
     else
       # Save list of parent links for second-level images
       assign current_menu_handle = mobile_menu_image_block.settings.menu_name | handle
-      assign second_level_mobile_menu_image_link_handles = second_level_mobile_menu_image_link_handles | append: current_menu_handle | append: ', '
+      assign mobile_menu_image_link_handles = mobile_menu_image_link_handles | append: current_menu_handle | append: ', '
     endif
   endfor
+
+  assign mobile_menu_image_link_handles = mobile_menu_image_link_handles | remove_last: ', ' | strip | split: ', '
 %}
 
 <section
@@ -70,7 +72,7 @@
                   has_mobile_menu_images: has_first_level_mobile_menu_images,
                   mobile_menu_image_aspect_ratio: mobile_menu_image_aspect_ratio,
                   mobile_menu_image_width: mobile_menu_image_width,
-                  second_level_mobile_menu_image_link_handles: second_level_mobile_menu_image_link_handles,
+                  mobile_menu_image_link_handles: mobile_menu_image_link_handles,
                   featured_link_label: section.settings.featured_link_label
                 %}
               </ul>
