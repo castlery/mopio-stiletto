@@ -130,6 +130,8 @@
 .login .login__main .input, .login .login__header .input{
     margin-bottom:calc(4px * 4);
     margin-bottom:var(--spacing-4);
+    border-radius: 8px;
+    border: 2px solid #ae864b;
   }
 .login .login__main .btn.btn--primary, .login .login__header .btn.btn--primary{
     margin-top:calc(4px * 2);
@@ -615,4 +617,58 @@ p + .account__cta-wrap{
 .addresses__cancel{
   margin-top:calc(4px * 3);
   margin-top:var(--spacing-3);
+}
+.account__row {
+  max-width: 800px;
+  display: flex;
+  margin: 20px 0;
+}
+
+.account__item {
+  flex: 1;
+}
+
+.account__item-key {
+  color: rgb(118, 118, 118);
+  margin-bottom: 4px;
+}
+
+.account__item-value {
+  color: rgb(50, 52, 51);
+}
+
+.modify__input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.customer__content-operation-btn {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.customer__content-operation-btn.cancel {
+  color: #ae864b;
+}
+
+.customer__content-operation-btn.save {
+  color: #fff;
+  background-color: #ae864b;
+}
+
+.customer__content-footer {
+  margin-top: 12px;
+}
+
+.customer__sections, .profile__sections {
+  margin-bottom: 12px;
 }

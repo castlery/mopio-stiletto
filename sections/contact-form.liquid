@@ -43,12 +43,11 @@
     {% assign form_id = 'ContactForm-' | append: section.id %}
     {% form 'contact', class: 'contact-form__form', id: form_id %}
       {%- assign success_msg = 'contact.form.post_success' | t -%}
-      {% render 'form-status',
-        form: form,
-        form_id: form_id,
-        success_message: success_msg,
-        success_alignment: text_alignment
-      %}
+      {% render 'contact-freshdesk-form-status',
+      form: form,
+      form_id: form_id,
+      success_message: success_msg
+    %}
 
       {%- unless form.posted_successfully? -%}
         <div class="contact-form__wrapper animation--item">

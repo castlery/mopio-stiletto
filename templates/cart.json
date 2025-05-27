@@ -11,10 +11,35 @@
   "sections": {
     "main": {
       "type": "main-cart",
-      "settings": {}
+      "settings": {
+        "show_product_currency": true,
+        "cross_sells_position": "below-line-items"
+      }
+    },
+    "16835589418d5e4608": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "alireviews-section-c74d9f4f-2d15-4d47-8be9-3b9a927ae9da": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "heading": "App section",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16835589418d5e4608",
+    "alireviews-section-c74d9f4f-2d15-4d47-8be9-3b9a927ae9da"
   ]
 }

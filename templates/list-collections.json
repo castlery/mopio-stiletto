@@ -9,12 +9,77 @@
  */
 {
   "sections": {
+    "countdown_bar_CCJaTi": {
+      "type": "countdown-bar",
+      "disabled": true,
+      "settings": {
+        "min_height": 60,
+        "min_height_mobile": 60,
+        "year": 2024,
+        "month": "may",
+        "day": "27",
+        "hour": "23",
+        "minute": "59",
+        "time_zone_selection": "shop",
+        "hide_timer_on_complete": true,
+        "timer_complete_message": "",
+        "heading": "Memorial Day Sale 5% Off Sitewide Ending In",
+        "text": "<p><em>Discount automatically applied in cart</em></p>",
+        "link": "shopify://collections",
+        "link_text": "",
+        "button_style": "btn--secondary",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "background_color": "#c51c26",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "full_width": false,
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "main": {
       "type": "main-list-collections",
-      "settings": {}
+      "settings": {
+        "display_type": "selected",
+        "collection_list": [
+          "aaron",
+          "arthur-recliner-chair",
+          "brooklyn",
+          "bruno",
+          "chloe",
+          "ensley",
+          "blake",
+          "macy",
+          "norwin",
+          "lauren",
+          "kelly",
+          "haylee",
+          "odelia",
+          "quin",
+          "sophie",
+          "sterling",
+          "ted",
+          "levi"
+        ],
+        "columns": "3",
+        "mobile_columns": "2",
+        "rows": "4",
+        "collection_listing_aspect_ratio": "square",
+        "label_style": "overlay",
+        "overlay_title_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_title_background": "#000000",
+        "enable_animation": false
+      }
     }
   },
   "order": [
+    "countdown_bar_CCJaTi",
     "main"
   ]
 }

@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "type": "custom.overlay",
   "name": "t:groups.overlay_group.name",
   "sections": {
@@ -17,11 +17,59 @@
         "enable_quick_cart": true,
         "show_product_currency": true,
         "promotion_text": "<p>Check out these collections.</p>",
+        "collection_list": [
+          "bestsellers-at-never-before-prices",
+          "buy-more-save-more",
+          "new-arrivals",
+          "sale-1",
+          "living-room",
+          "bedroom",
+          "dining-room"
+        ],
         "collection_list_button_style": "btn--secondary"
       }
     },
     "popup": {
       "type": "popup",
+      "blocks": {
+        "popup_YpW7m7": {
+          "type": "popup",
+          "settings": {
+            "delay": "timer_0",
+            "frequency": "frequency_6",
+            "show_on_exit_intent": false,
+            "disable_for_account_holders": true,
+            "show_on_specific_page": true,
+            "target_page": "https://mopio.com/",
+            "accent": "it's lovely to see you",
+            "heading": "Join The Mopio Club",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "",
+            "text": "<h4><strong>Get 8% off your first order</strong></h4>",
+            "link": "shopify://pages/mopioclub",
+            "link_text": "",
+            "dismiss_text": "No I do not want a discount",
+            "footer_text": "<p>T&Cs apply.</p>",
+            "show_social_icons": false,
+            "popup_size": "medium",
+            "content_alignment": "center",
+            "image": "shopify://shop_images/Brooklyn-Coffee-Table-Square-Set_4.jpg",
+            "image_position": "background",
+            "focal_point": "image_presentation",
+            "show_image_on_mobile": true,
+            "background_color": "#b58840",
+            "text_color": "#ffffff",
+            "button_background_color": "#b58840",
+            "button_text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 58
+          }
+        }
+      },
+      "block_order": [
+        "popup_YpW7m7"
+      ],
+      "disabled": true,
       "settings": {}
     }
   },

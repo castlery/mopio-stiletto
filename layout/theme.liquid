@@ -23,11 +23,21 @@
 
 <html class="no-js" lang="{{ request.locale.iso_code }}" style="--announcement-height: 1px;">
   <head>
+    <script> 
+
+    !function(){var o=window.tdl=window.tdl||[];if(o.invoked)window.console&&console.error&&console.error("Tune snippet has been included more than once.");else{o.invoked=!0,o.methods=["init","identify","convert"],o.factory=function(n){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(n),o.push(e),o}};for(var e=0;e<o.methods.length;e++){var n=o.methods[e];o[n]=o.factory(n)}o.init=function(e){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://js.go2sdk.com/v2/tune.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(n,t),o.domain=e}}}(); 
+    
+    tdl.init("https://aspireiq.go2cloud.org") 
+    tdl.identify() 
+    </script>
+        <meta name=google-site-verification=-TEHwcjrdbF_rNHNKj4PMa5iEpeK2dy0vLFgUluDPXk>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     {% render 'meta-description' %}
-
+    <meta name="google-site-verification" content="-TEHwcjrdbF_rNHNKj4PMa5iEpeK2dy0vLFgUluDPXk">
+    <meta name="facebook-domain-verification" content="8ws16wr2twx2uymt8z5ippn8q8rc74">
+    <meta name="p:domain_verify" content="5819005e1ab7bef2cd9cfdb400f6aa90"/>
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
@@ -63,6 +73,92 @@
     {%- render 'theme-globals' -%}
 
     {{ content_for_header }}
+    <script src="{{ 'timesact.js' | asset_url }}" defer="defer"></script>
+    <script>
+      /**
+        * Author: Gavin
+        * 重写history的pushState和replaceState
+        * @param action pushState|replaceState
+        * @return {function(): *}
+        */
+       function wrapState(action) {
+           // 获取原始定义
+           let raw = history[action];
+           return function () {
+               // 经过包装的pushState或replaceState
+               let wrapper = raw.apply(this, arguments);
+
+               // 定义名为action的事件
+               let e = new Event(action);
+
+               // 将调用pushState或replaceState时的参数作为stateInfo属性放到事件参数event上
+               e.stateInfo = {...arguments};
+
+               // 调用pushState或replaceState时触发该事件
+               window.dispatchEvent(e);
+
+               return wrapper;
+           }
+       }
+       // 修改原始定义, 方便可以 window 监听到 "pushState" 和 "replaceState" 事件
+       history.pushState = wrapState("pushState");
+       history.replaceState = wrapState("replaceState");
+    </script>
+
+    <script id="fm-source-script">
+      let FreshMarketerSourceMap={}; // This wil be single source of truth for all the operations from MAS TO SHOPIFY
+
+      // For Loading the customer information
+      {%if customer %}
+        FreshMarketerSourceMap.currentCustomer = {
+          id: '{{ customer.id }}',
+          'name': '{{ customer.name }}',
+          'email': '{{ customer.email }}',
+          'mobile': '{{ customer.phone }}',
+          'first_name': '{{ customer.first_name }}',
+          'last_name': '{{ customer.last_name }}',
+          'total_orders': {{ customer.orders_count }},
+          'last_order': '{{ customer.last_order }}',
+          'total_spent': {{ customer.total_spent }},
+          'address_list': {{ customer.addresses | json }},
+          'accepts_marketing': {{ customer.accepts_marketing }}
+      }
+      {% endif %}
+
+      // For Loading the Current Product  information
+      {%if product %}
+      let FMproduct = {{ product | json }};
+      FMproduct.url = "{{ shop.secure_url }}{{ product.url }}";
+      FMproduct.price = {{ product.price }}/100;
+      FreshMarketerSourceMap.currentProduct=FMproduct
+      {% endif %}
+
+      // For Loading the Shopify CART Product  information
+      let shopifyCartEventData = {{ cart | json }};
+
+      //For Getting Collection associated with Product
+
+      {% for cartItem in cart.items  %}
+          {%- assign FMmyProduct = cartItem.product -%}
+          var FMmyProductRef={{FMmyProduct|json}}
+         {%- assign FMmyProductCollections = FMmyProduct.collections -%}
+         var FMmyProductCollectionsRef={{FMmyProductCollections|json}}
+
+          for(let i=0;i<shopifyCartEventData.items.length;i++){
+              if(shopifyCartEventData.items[i].product_id===FMmyProductRef.id){
+
+              let FMcollList=[]
+              for(let j=0;j<FMmyProductCollectionsRef.length;j++){
+                FMcollList.push(FMmyProductCollectionsRef[j].title)
+              }
+              shopifyCartEventData.items[i].collections=FMcollList
+
+             }
+         }
+      {% endfor %}
+      FreshMarketerSourceMap.shopifyCartEventData=shopifyCartEventData;
+      FreshMarketerSourceMap.shopName = "{{ shop.name }}"
+    </script>
   </head>
 
   <body class="template-{{ request.page_type | handle }}">
@@ -97,9 +193,66 @@
       {% render 'modal' %}
       {% render 'back-to-top' %}
     </div>
+    <!-- START loading custom js -->
+    {% if page.title == 'Mopio Club' %}
+      {{ 'jquery-min.js' | asset_url | script_tag }}
+      {{ 'contact-freshdesk-form.js' | asset_url | script_tag }}
+    {% endif %}
 
+    {% if page.title == 'JOIN THE MOPIO CLUB' %}
+      {{ 'jquery-min.js' | asset_url | script_tag }}
+      {{ 'page-club.js' | asset_url | script_tag }}
+    {% endif %}
+
+    {% if page.title == 'Contact Us' %}
+      {{ 'jquery-min.js' | asset_url | script_tag }}
+      {{ 'page-contact.js' | asset_url | script_tag }}
+    {% endif %}
+
+    {% if page.title == 'Copy of Contact Us' %}
+      {{ 'jquery-min.js' | asset_url | script_tag }}
+      {{ 'page-contact.js' | asset_url | script_tag }}
+    {% endif %}
+    <!-- END -->
     {{ '//www.youtube.com/iframe_api' | script_tag }}
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
+    {% if template contains 'collection' and collection.handle == 'macy' %}
+      <div id="sticky-product-cta" style="
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        background: #000;
+        color: #fff;
+        padding: 14px 28px;
+        border-radius: 40px;
+        font-weight: bold;
+        text-align: center;
+        font-family: inherit;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      ">
+        <a href="/products/macy-6-seater-u-shape-sofa-oat" style="
+          color: #fff;
+          text-decoration: none;
+          display: block;
+        ">
+         🛒 Shop Macy Now
+        </a>
+      </div>
+    
+      <script>
+        window.addEventListener('scroll', function () {
+          const cta = document.getElementById('sticky-product-cta');
+          if (window.scrollY > 200) {
+            cta.style.display = 'block';
+          } else {
+            cta.style.display = 'none';
+          }
+        });
+      </script>
+    {% endif %}
   </body>
   <link
     rel="preload"

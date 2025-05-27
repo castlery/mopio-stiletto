@@ -9,881 +9,817 @@
  */
 {
   "sections": {
-    "image_hero_split": {
-      "type": "image-hero-split",
+    "09be2396-b4c3-4d20-9815-21341fb07499": {
+      "type": "slideshow",
       "blocks": {
-        "image_1": {
-          "type": "image",
+        "slide_gfgw9f": {
+          "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/IMG_7653_dea2d48b-8bae-4348-87a0-22a201fe9a94.jpg",
+            "image_mobile": "shopify://shop_images/IMG_7653_3acb5879-5a6f-43aa-bd6d-e5d4f62e8e40.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
-            "title": "Image hero split",
-            "heading_tag": "h2",
+            "media_link": "shopify://collections/memorial-day-sale",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "MEMORIAL DAY SALE",
+            "title": "Up to 60% Off",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>As seen on @danielle.donohue: <strong>Odelia Outdoor Set</strong></p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://collections/memorial-day-sale",
+            "link_text_1": "Shop Sale",
+            "button_style_1": "btn--secondary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        },
+        "slide_wTqMzN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Blake-3-Drawer-Dresser-Set-Of-2-With-2-Acrylic-Storage-Cabinet-With-Hutch-Black-Square-Set_1_22a5a117-72a0-4713-9ab0-0c70403a7d62.jpg",
+            "image_mobile": "shopify://shop_images/Blake-3-Drawer-Dresser-Set-Of-2-With-2-Acrylic-Storage-Cabinet-With-Hutch-Black-Square-Set_1_22a5a117-72a0-4713-9ab0-0c70403a7d62.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/blake",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "THE ICONIC BLAKE",
+            "title": "Back In Stock: Modular Storage",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Available In Two Colors</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://collections/blake",
+            "link_text_1": "Shop Now",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
+          }
+        },
+        "slide_jDpDJh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/01a_Main_Image_Lifestyle_Square_c6579ff7-9664-4ea7-8ba6-805c7e824736.jpg",
+            "image_mobile": "shopify://shop_images/Macy-6-Seater-L--Shape-Sofa-Olive-Green-Velvet-Square-Set_2.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "NEW COLORS LAUNCHED",
+            "title": "Comfort, Flexibility, and Hidden Storage",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>The Modular Sofa that does it all</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://collections/macy",
+            "link_text_1": "Browse Collection",
+            "button_style_1": "btn--secondary",
+            "link_2": "",
+            "link_text_2": "",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
+          }
+        },
+        "slide_wnmVFw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/01f_MainImage_King_AngledLifestyle.jpg",
+            "image_mobile": "shopify://shop_images/01f_MainImage_King_AngledLifestyle.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://products/ted-bed-frame-king-with-removable-upholstered-headboard",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "ted collection",
+            "title": "New: Upholstered Bedframes & Bench",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-5-base",
             "text": "",
-            "link": "/",
-            "link_text": "Shop Now",
-            "button_style": "btn--primary"
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://products/ted-bench-with-cushion",
+            "link_text_1": "Shop Now",
+            "button_style_1": "btn--secondary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
           }
         },
-        "image_2": {
-          "type": "image",
-          "settings": {
-            "focal_point": "top",
-            "mobile_focal_point": "center",
-            "title": "Image hero split",
-            "heading_tag": "h2",
-            "text": "",
-            "link": "/",
-            "link_text": "Shop Now",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": ["image_1", "image_2"],
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 90,
-        "mobile_height": 75,
-        "text_position": "center",
-        "text_color": "#fcfcf9",
-        "button_background_color": "#faf7c3",
-        "button_text_color": "#242526",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 20,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "scrolling_content": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Announce your sale",
-            "link": ""
-          }
-        },
-        "icon": {
-          "type": "icon",
-          "settings": {
-            "icon": "price-tag",
-            "icon_width": 50,
-            "icon_width_mobile": 50,
-            "link": ""
-          }
-        },
-        "image": {
-          "type": "image",
+        "slide_rk7fUA": {
+          "type": "slide",
           "disabled": true,
           "settings": {
-            "image_size": 200,
-            "image_size_mobile": 200,
-            "link": ""
-          }
-        }
-      },
-      "block_order": ["text", "icon", "image"],
-      "settings": {
-        "font_choice": "ff-heading",
-        "text_font_class": "fs-body-300",
-        "duration": 10,
-        "direction": "reverse",
-        "gap": 100,
-        "padding_top": 22,
-        "padding_bottom": 23,
-        "borders": "top-bottom",
-        "text_color": "#faf7c3",
-        "background_color": "#242526",
-        "border_color": "#242526",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-none"
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "spacer_1": {
-          "type": "spacer",
-          "settings": {
-            "space": 40
-          }
-        },
-        "accent": {
-          "type": "accent",
-          "settings": {
-            "accent": "Accent"
-          }
-        },
-        "spacer_2": {
-          "type": "spacer",
-          "settings": {
-            "space": 40
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-1-base"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text area to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "Button",
-            "button_style": "btn--callout"
+            "image": "shopify://shop_images/Levi-Storage-Tray-Ottoman--Gray-With-Tray-Faux-Leather-Bench-Pecan-Brown-With-Luna-Storage-Tray-Round-Ottoman-Set-Of-3-Set_2.jpg",
+            "image_mobile": "shopify://shop_images/Levi-Storage-Tray-Ottoman--Gray-With-Tray-Faux-Leather-Bench-Pecan-Brown-With-Luna-Storage-Tray-Round-Ottoman-Set-Of-3-Set_2.jpg",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "shopify://collections/levi",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "NEW ARRIVALS",
+            "title": "Sit, Store & Serve",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>There's One For Every Home</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "shopify://collections/levi",
+            "link_text_1": "Shop Now",
+            "button_style_1": "btn--secondary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
           }
         }
       },
       "block_order": [
-        "spacer_1",
-        "accent",
-        "spacer_2",
-        "heading",
-        "text",
-        "button"
+        "slide_gfgw9f",
+        "slide_wTqMzN",
+        "slide_jDpDJh",
+        "slide_wnmVFw",
+        "slide_rk7fUA"
       ],
       "settings": {
-        "alignment": "left_left",
+        "image_aspect": "custom",
+        "desktop_height": 85,
+        "mobile_height": 65,
+        "enable_autoplay": true,
+        "duration_autoplay": 4,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#ffffff",
+        "navigation_color_background": "",
+        "navigation_background_opacity": 20,
         "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-bottom-only",
-        "content_width": "full",
-        "custom_content_width": 1000
+        "section_padding": "none"
       }
     },
-    "collection_list_slider": {
-      "type": "collection-list-slider",
-      "settings": {
-        "heading": "Collections",
-        "heading_tag": "h2",
-        "subheading": "",
-        "link": "",
-        "link_text": "",
-        "columns": "4",
-        "mobile_columns": "2",
-        "collection_list": [],
-        "collection_listing_aspect_ratio": "portrait",
-        "label_style": "overlay",
-        "overlay_title_background_style": "solid",
-        "overlay_text_color": "#f7f7e8",
-        "overlay_title_background": "#242526",
-        "enable_animation": true,
-        "divider_style": "solid",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "countdown_bar": {
+    "countdown_bar_AQ7Tm6": {
       "type": "countdown-bar",
+      "disabled": true,
       "settings": {
         "min_height": 60,
         "min_height_mobile": 60,
         "year": 2025,
-        "month": "december",
-        "day": "1",
-        "hour": "0",
-        "minute": "0",
+        "month": "march",
+        "day": "9",
+        "hour": "23",
+        "minute": "59",
         "time_zone_selection": "shop",
-        "hide_timer_on_complete": false,
+        "hide_timer_on_complete": true,
         "timer_complete_message": "",
-        "heading": "Countdown bar",
-        "heading_tag": "h4",
-        "text": "<p>Use this timer to create urgency and boost sales.</p>",
-        "link": "",
-        "link_text": "Button",
-        "button_style": "btn--primary",
+        "heading": "Clearance Sale Ends In",
+        "text": "",
+        "link": "shopify://collections/sale",
+        "link_text": "Shop",
+        "button_style": "btn--secondary",
         "focal_point": "image_presentation",
         "mobile_focal_point": "image_presentation",
-        "text_color": "#242526",
-        "button_background_color": "#22292d",
-        "button_text_color": "#faf7c3",
-        "background_color": "#faf7c3",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
+        "button_text_color": "#000000",
+        "background_color": "#b58840",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
-        "full_width": false,
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "image_hero_1": {
-      "type": "image-hero",
-      "blocks": {
-        "accent": {
-          "type": "accent",
-          "settings": {
-            "accent": "Accent"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Image hero",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Display a featured image with text about your brand, store, or products.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": ["accent", "heading", "text", "button"],
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 80,
-        "mobile_height": 100,
-        "focal_point": "center",
-        "mobile_focal_point": "image_presentation",
-        "media_link": "",
-        "text_position": "flex-start_flex-end",
-        "text_position_mobile": "center_center",
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.35) 4%, rgba(9, 9, 9, 0.52) 49%, rgba(0, 0, 0, 1) 98%)",
-        "overlay_opacity": 40,
-        "enable_animation": true,
+        "full_width": true,
         "section_padding": "section--vertical-padding-none"
       }
     },
-    "featured_collection_slider_1": {
-      "type": "featured-collection-slider",
+    "1743491136374dcd35": {
+      "type": "apps",
       "blocks": {
-        "collection": {
-          "type": "collection",
+        "lookfy_gallery_lookfy_gallery_9cQdjV": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
           "settings": {
-            "show_view_all": true,
-            "collection": "",
-            "collection_name": "Collection"
-          }
-        },
-        "product_list": {
-          "type": "product_list",
-          "disabled": true,
-          "settings": {
-            "product_list": [],
-            "collection_name": "Collection"
-          }
-        }
-      },
-      "block_order": ["collection", "product_list"],
-      "settings": {
-        "heading": "Featured collection",
-        "heading_tag": "h2",
-        "subheading": "",
-        "link": "",
-        "link_text": "Shop collection",
-        "maximum_products": 6,
-        "columns": "3",
-        "mobile_columns": "2",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-only"
-      }
-    },
-    "sales_banner": {
-      "type": "sales-banner",
-      "settings": {
-        "min_height": 460,
-        "min_height_mobile": 500,
-        "sale_type": "Up to *",
-        "sale_amount": "50% off",
-        "sale_unit": "none",
-        "terms_and_conditions": "* Optional note and T&C",
-        "terms_vertical_offset": 20,
-        "sale_font_size": 136,
-        "sale_font_size_mobile": 114,
-        "currency_symbol_position": "before",
-        "heading": "Announce your sale",
-        "heading_tag": "h2",
-        "heading_font_class": "fs-heading-2-base",
-        "text": "<p>Highlight sale campaigns, discounts, and promotions.</p>",
-        "link": "",
-        "link_text": "Button",
-        "button_style": "btn--primary",
-        "link_2": "",
-        "link_text_2": "",
-        "button_style_2": "btn--secondary",
-        "focal_point": "image_presentation",
-        "mobile_focal_point": "center",
-        "text_color": "#fcfcf9",
-        "button_background_color": "#faf7c3",
-        "button_text_color": "#242526",
-        "background_color": "#242526",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 61,
-        "layout": "two-columns",
-        "enable_animation": true,
-        "show_frame": false,
-        "full_width": false,
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "shoppable_feature": {
-      "type": "shoppable-feature",
-      "blocks": {
-        "hotspot_1": {
-          "type": "hotspot",
-          "settings": {
-            "product_item": "",
-            "horizontal_position": 46,
-            "vertical_position": 68
-          }
-        },
-        "hotspot_2": {
-          "type": "hotspot",
-          "settings": {
-            "product_item": "",
-            "horizontal_position": 74,
-            "vertical_position": 32
-          }
-        }
-      },
-      "block_order": ["hotspot_1", "hotspot_2"],
-      "settings": {
-        "image_position": "left",
-        "image_size": 50,
-        "aspect_ratio": "portrait_alt",
-        "heading": "Shoppable image",
-        "heading_tag": "h2",
-        "subheading": "",
-        "link": "",
-        "link_text": "Shop now",
-        "button_style": "btn--callout",
-        "enable_animation": true,
-        "divider_style": "solid",
-        "section_padding": "section--vertical-padding-bottom-only",
-        "content_position_desktop": "inside"
-      }
-    },
-    "video_hero": {
-      "type": "video-hero",
-      "blocks": {
-        "spacer_1": {
-          "type": "spacer",
-          "settings": {
-            "space": 12
-          }
-        },
-        "accent": {
-          "type": "accent",
-          "settings": {
-            "accent": "Accent"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Video Hero",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-1"
-          }
-        },
-        "spacer_2": {
-          "type": "spacer",
-          "settings": {
-            "space": 12
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Display an autoplay video (without sound) paired with promotional text.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "Button",
-            "button_style": "btn--secondary"
+            "gallery_id": 22619,
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_color": "",
+            "heading_align": "left",
+            "desc_style": "subtitle",
+            "desc_color": "",
+            "custom_class": "",
+            "maximum_width": 0,
+            "background_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left_right": 0
           }
         }
       },
       "block_order": [
-        "spacer_1",
-        "accent",
-        "heading",
-        "spacer_2",
-        "text",
-        "button"
+        "lookfy_gallery_lookfy_gallery_9cQdjV"
       ],
+      "disabled": true,
       "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 90,
-        "mobile_height": 90,
-        "media_link": "",
-        "focal_point": "image_presentation",
-        "focal_point_mobile": "image_presentation",
-        "text_position": "flex-start_flex-start",
-        "text_position_mobile": "center_center",
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 40,
+        "heading": "",
         "enable_animation": true,
-        "section_padding": "section--vertical-padding-bottom-only"
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
       }
     },
-    "grid": {
+    "grid_qgLk9B": {
       "type": "grid",
       "blocks": {
-        "item_1": {
+        "item_Ja6PRQ": {
           "type": "item",
           "settings": {
-            "width": "50",
-            "height": 800,
-            "mobile_height": 700,
+            "width": "33",
+            "height": 420,
+            "mobile_height": 440,
+            "image": "shopify://shop_images/Odelia-Outdoor-Small-Loveseat-With-Coffee-Table-With-2-Armchairs-Add-Cover_7_118da4cb-dce0-48a3-9a9b-743658a69999.jpg",
+            "mobile_image": "shopify://shop_images/Odelia-Outdoor-Small-Loveseat-With-Coffee-Table-With-2-Armchairs-Add-Cover_7_118da4cb-dce0-48a3-9a9b-743658a69999.jpg",
             "media_fit": "cover",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "text_position": "center_center",
-            "accent": "Accent",
-            "title": "Grid item",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-1-base",
-            "subheading": "",
-            "subheading_tag": "h4",
-            "subheading_font_class": "fs-heading-6-base",
-            "text": "<p>Perfect for lookbooks and editorial photography</p>",
+            "accent": "",
+            "title": "",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "<h2><strong>Outdoor</strong></h2>",
+            "subheading_font_class": "fs-heading-4-base",
+            "text": "",
             "text_font_class": "fs-body-100",
-            "link": "/",
-            "link_text": "Shop now",
+            "link": "shopify://collections/outdoor",
+            "link_text": "",
             "button_style": "btn--primary",
             "background_color": "",
             "text_color": "#ffffff",
-            "button_background_color": "#faf7c3",
-            "button_text_color": "#242526",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
-            "overlay_opacity": 20
+            "overlay_opacity": 30
           }
         },
-        "item_2": {
+        "item_pytWeM": {
           "type": "item",
           "settings": {
-            "width": "50",
-            "height": 800,
-            "mobile_height": 700,
+            "width": "33",
+            "height": 400,
+            "mobile_height": 300,
+            "image": "shopify://shop_images/Blake-3-Drawer-Dresser-Set-Of-2-With-2-Acrylic-Storage-Cabinet-With-Hutch-Black-Square-Set_1.jpg",
+            "mobile_image": "shopify://shop_images/Blake-3-Drawer-Dresser-Set-Of-2-With-2-Acrylic-Storage-Cabinet-With-Hutch-Black-Square-Set_1.jpg",
             "media_fit": "cover",
-            "focal_point": "center",
+            "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "text_position": "center_center",
-            "accent": "Accent",
-            "title": "Grid item",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-1-base",
-            "subheading": "",
-            "subheading_tag": "h3",
-            "subheading_font_class": "fs-heading-6-base",
-            "text": "<p>Perfect for lookbooks and editorial photography</p>",
+            "accent": "",
+            "title": "",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "<h2><strong>Living Room</strong></h2>",
+            "subheading_font_class": "fs-heading-4-base",
+            "text": "",
             "text_font_class": "fs-body-100",
-            "link": "/",
-            "link_text": "Shop now",
+            "link": "shopify://collections/living-room",
+            "link_text": "",
             "button_style": "btn--primary",
             "background_color": "",
             "text_color": "#ffffff",
-            "button_background_color": "#faf7c3",
-            "button_text_color": "#242526",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
             "color_overlay": "#000000",
             "color_overlay_gradient": "",
-            "overlay_opacity": 20
-          }
-        }
-      },
-      "block_order": ["item_1", "item_2"],
-      "settings": {
-        "heading": "",
-        "heading_tag": "h2",
-        "subheading": "",
-        "content_alignment": "center",
-        "enable_animation": true,
-        "full_width": true,
-        "spacing": 24,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-bottom-only"
-      }
-    },
-    "featured_collection_slider_2": {
-      "type": "featured-collection-slider",
-      "blocks": {
-        "collection_1": {
-          "type": "collection",
-          "settings": {
-            "show_view_all": true,
-            "collection": "",
-            "collection_name": "Collection"
+            "overlay_opacity": 38
           }
         },
-        "collection_2": {
-          "type": "collection",
+        "item_GzhGPe": {
+          "type": "item",
           "settings": {
-            "show_view_all": true,
-            "collection": "",
-            "collection_name": "Collection"
+            "width": "33",
+            "height": 400,
+            "mobile_height": 300,
+            "image": "shopify://shop_images/Brooklyn-Corner-TV-Stand-Oak-Square-Set_10.jpg",
+            "mobile_image": "shopify://shop_images/Brooklyn-Corner-TV-Stand-Oak-Square-Set_10_cfbfba61-8e70-4d41-81da-1ae2f10503d2.jpg",
+            "media_fit": "cover",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "<h2><strong>Bundles</strong></h2>",
+            "subheading_font_class": "fs-heading-4-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "shopify://collections/bundle-deals",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
           }
         }
       },
-      "block_order": ["collection_1", "collection_2"],
+      "block_order": [
+        "item_Ja6PRQ",
+        "item_pytWeM",
+        "item_GzhGPe"
+      ],
+      "custom_css": [],
       "settings": {
-        "heading": "Featured collections",
-        "heading_tag": "h2",
+        "heading": "",
+        "subheading": "",
+        "content_alignment": "left",
+        "enable_animation": true,
+        "full_width": true,
+        "spacing": 0,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "featured_collection_slider_nJeBHi": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_L9TQGU": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "show_view_all": true,
+            "collection": "sale",
+            "collection_name": "Clearance Sale"
+          }
+        },
+        "collection_3Mhn4Q": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "outdoor",
+            "collection_name": "Outdoor"
+          }
+        },
+        "product_list_QwCLN8": {
+          "type": "product_list",
+          "settings": {
+            "product_list": [
+              "chloe-futon-sofa-bed-apricot-velvet",
+              "brooklyn-3-drawer-dresser-golden-oak",
+              "ensley-tv-stand-59",
+              "lauren-arched-cabinet-black-oak",
+              "mopio-norwin-5-tier-ladder-shelf",
+              "blake-modular-storage-cabinet-arched-white-oak",
+              "blake-modular-storage-cabinet-arched-black-oak",
+              "blake-tall-acrylic-display-cabinet-arched-white-oak",
+              "blake-3-drawer-dresser-with-hutch-black-oak",
+              "brooklyn-headboard-queen-side-tables-pair-oak",
+              "brooklyn-cabinet-oak",
+              "bundle-ensley-59-tv-stand-ensley-coffee-table-walnut",
+              "macy-4-seats-sofa-oat",
+              "macy-6-seats-sofa-stone-gray"
+            ],
+            "collection_name": "Bestsellers"
+          }
+        }
+      },
+      "block_order": [
+        "collection_L9TQGU",
+        "collection_3Mhn4Q",
+        "product_list_QwCLN8"
+      ],
+      "settings": {
+        "heading": "Popular Right Now",
         "subheading": "",
         "link": "",
         "link_text": "",
-        "maximum_products": 6,
+        "maximum_products": 15,
+        "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "174313057553cff3f4": {
+      "type": "apps",
+      "blocks": {
+        "lookfy_gallery_lookfy_gallery_zTqCtg": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "gallery_id": 22437,
+            "dynamic_source": "",
+            "title": "",
+            "subtitle": "",
+            "heading_size": "1",
+            "heading_color": "",
+            "heading_align": "left",
+            "desc_style": "subtitle",
+            "desc_color": "",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 8,
+            "padding_left_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "lookfy_gallery_lookfy_gallery_zTqCtg"
+      ],
+      "settings": {
+        "heading": "",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "d71df2af-ba99-428a-9772-57ebe99ef94d": {
+      "type": "newsletter-compact",
+      "blocks": {
+        "template--15305459073231__d71df2af-ba99-428a-9772-57ebe99ef94d-1668035253c173f759-0": {
+          "type": "text_content",
+          "settings": {
+            "width": "600",
+            "title": "Join Mopio Club, get 8% off",
+            "heading_font_class": "fs-heading-4-base",
+            "subheading": "",
+            "subheading_font_class": "fs-heading-6-base",
+            "text": "<p>You'll receive an email with an exclusive discount code</p>",
+            "text_font_class": "fs-body-75"
+          }
+        },
+        "template--15305459073231__d71df2af-ba99-428a-9772-57ebe99ef94d-1668035253c173f759-1": {
+          "type": "newsletter_signup",
+          "settings": {
+            "signup_link_text": "Sign up",
+            "footer_text": "<p>By completing this form, you are signing up to receive our emails and can unsubscribe at any time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15305459073231__d71df2af-ba99-428a-9772-57ebe99ef94d-1668035253c173f759-0",
+        "template--15305459073231__d71df2af-ba99-428a-9772-57ebe99ef94d-1668035253c173f759-1"
+      ],
+      "settings": {
+        "spacing_mode": "evenly",
+        "alignment": "center",
+        "focal_point": "image_presentation",
+        "background_color": "#b58840",
+        "text_color": "#ffffff",
+        "input_color": "#000000",
+        "input_background": "#ffffff",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "1655855558c1ac2348": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "3adb4a7d-c66b-4fd9-9868-c9fe7533ecfa": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "new-arrivals",
+            "collection_name": "New Arrivals"
+          }
+        }
+      },
+      "block_order": [
+        "3adb4a7d-c66b-4fd9-9868-c9fe7533ecfa"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "New Arrivals",
+        "subheading": "",
+        "link": "shopify://collections/new-arrivals",
+        "link_text": "View All",
+        "maximum_products": 15,
+        "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "gallery_carousel_7j4gmf": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "image_ctBnhi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image3_1.jpg",
+            "focal_point": "bottom",
+            "title": "",
+            "text": "<h3><a href=\"/products/sophie-4-in-1-convertible-sleeper-chair-light-gray-fabric\" title=\"Sophie 4-in-1 Convertible Sleeper Chair, Light Gray Fabric\"><strong>Sophie Sleeper Chair (Light Gray)</strong></a></h3><p><em>@vivianaventers</em></p>"
+          }
+        },
+        "image_nNMY46": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_20230117_003229.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/norwin-cabinet\" title=\"Norwin 2-Door Cabinet\"><strong>Norwin Cabinet</strong></a></h3><p><em>Lyon</em></p>"
+          }
+        },
+        "image_6qDXTj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/brooklyn_cabinet.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/brooklyn-cabinet-oak\" title=\"Brooklyn Cabinet, Golden Oak\"><strong>Brooklyn Cabinet (Oak)</strong></a></h3><p><em>@staybycorisamuel</em></p>"
+          }
+        },
+        "image_TQY9cY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0680_11ecb89f-2f8f-48e6-9109-e4f5e85c8c73.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/aaron-sofa-old-rosa-velvet\" title=\"Aaron Futon Sofa Bed, Old Rosa Velvet\"><strong>Aaron Futon Sofabed (Old Rosa)</strong></a></h3><p><em>Angelica O.</em></p>"
+          }
+        },
+        "image_jPN7Xq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5462_1.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/sophie-storage-bench-pearl-white-boucle\" title=\"Sophie Storage Bench, Pearl White Boucle\"><strong>Sophie Storage Bench (Pearl White Boucle)</strong></a></h3><p><em>@theamendolahouse</em></p>"
+          }
+        },
+        "image_cnewAw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image1_1.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/brooklyn-nightstand-black-oak\" title=\"Brooklyn Nightstand, Black Oak\"><strong>Brooklyn Nightstand (Black)</strong></a></h3><p><em>@havrillahome</em></p>"
+          }
+        },
+        "image_xtyn9x": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7653.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/odelia-4-piece-outdoor-patio-set\" title=\"Odelia Outdoor 4-Piece Patio Set\"><strong>Odelia Patio Set</strong></a></h3><p><em>@danielle.donohue</em></p>"
+          }
+        },
+        "image_RLj6rQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Tezza-0134_1.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/haylee-sideboard\" title=\"Haylee Sideboard\"><strong>Haylee Sideboard</strong></a></h3><p><em>@woodsfinhome</em></p>"
+          }
+        },
+        "image_8L6exr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5_1_95f71668-fa11-48e9-97ec-1fcc196860fd.jpg",
+            "focal_point": "bottom",
+            "title": "",
+            "text": "<h3><a href=\"/products/norwin-desk\" title=\"Norwin Executive Desk\"><strong>Norwin Desk</strong></a></h3><p><em>@livingwithlex_</em></p>"
+          }
+        },
+        "image_9DUBN4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image00008_1.png",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/brooklyn-cabinet-black-oak\" title=\"Brooklyn Cabinet, Black Oak\"><strong>Brooklyn Cabinet (Black)</strong></a></h3><p><em>@theamendolahouse</em></p>"
+          }
+        },
+        "image_7Hf3LV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC01152_1.jpg",
+            "focal_point": "bottom",
+            "title": "",
+            "text": "<h3><a href=\"/products/ensley-coffee-table\" title=\"Ensley Coffee Table, Walnut\"><strong>Ensley Coffee Table (Walnut)</strong></a></h3><p><em>@itschelseahope</em></p>"
+          }
+        },
+        "image_yFgCNh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_20221009_211457_2.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/brooklyn-corner-tv-stand-natural-walnut\" title=\"Brooklyn Corner TV Stand, Natural Walnut\"><strong>Brooklyn Corner TV Stand (Walnut)</strong></a></h3><p><em>@potatoboss</em></p>"
+          }
+        },
+        "image_M6b7hp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/image_67191297_2_1_4d2ac300-3c78-45f6-b4af-e3d85565c74d.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/lauren-arched-cabinet-black-oak\" title=\"(Pre-order) Lauren Arched Short Cabinet, Black Oak\"><strong>Lauren Short Cabinet (Black Oak)</strong></a></h3><p><em>@liketobehome</em></p>"
+          }
+        },
+        "image_eLbEgq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8281_2.jpg",
+            "focal_point": "bottom",
+            "title": "",
+            "text": "<h3><a href=\"/products/arthur-recliner-chair-taupe-jacquard\" title=\"Arthur Recliner Chair, Taupe Stripe Jacquard\"><strong>Arthur Recliner Chair (Taupe)</strong></a></h3><p><em>@greenacresfarmhouse</em></p>"
+          }
+        },
+        "image_MjWcVd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5708_1.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/kelly-counter-table-set-1\" title=\"Kelly Counter Table Set\"><strong>Kelly Counter Table Set</strong></a></h3><p><em>@fancyfixdecor</em></p>"
+          }
+        },
+        "image_YHJ9WC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_9889_1.jpg",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": "<h3><a href=\"/products/haylee-tv-stand-59-oak\" title=\"Haylee 59&quot; TV Stand, Oak\"><strong>Haylee TV Stand (Oak)</strong></a></h3><p><em>@momsbunsandcaffeine</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_ctBnhi",
+        "image_nNMY46",
+        "image_6qDXTj",
+        "image_TQY9cY",
+        "image_jPN7Xq",
+        "image_cnewAw",
+        "image_xtyn9x",
+        "image_RLj6rQ",
+        "image_8L6exr",
+        "image_9DUBN4",
+        "image_7Hf3LV",
+        "image_yFgCNh",
+        "image_M6b7hp",
+        "image_eLbEgq",
+        "image_MjWcVd",
+        "image_YHJ9WC"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "As Styled In Real Homes",
+        "subheading": "<p><em>#LifeWithMopio</em></p>",
+        "link": "",
+        "link_text": "",
         "columns": "3",
         "mobile_columns": "2",
+        "loop_carousel": true,
+        "aspect_ratio": "square",
+        "image_caption_style": "beneath",
+        "image_caption_size": "fs-body-75",
+        "overlay_text_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_text_background": "#000000",
+        "enable_animation": false,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "1743490493f01e66f6": {
+      "type": "apps",
+      "blocks": {
+        "lookfy_gallery_lookfy_gallery_g8TwN7": {
+          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+          "settings": {
+            "gallery_id": 22622,
+            "dynamic_source": "",
+            "title": "Mopio In Real Homes",
+            "subtitle": "",
+            "heading_size": "0.8",
+            "heading_color": "",
+            "heading_align": "left",
+            "desc_style": "subtitle",
+            "desc_color": "",
+            "custom_class": "",
+            "background_color": "",
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "padding_left_right": 0
+          }
+        }
+      },
+      "block_order": [
+        "lookfy_gallery_lookfy_gallery_g8TwN7"
+      ],
+      "settings": {
+        "heading": "",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
-    "quotes": {
-      "type": "quote",
-      "blocks": {
-        "quote_1": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>“Add a quote from a customer or press about your store and products.”</p>",
-            "title": "Source",
-            "quote_tag": "h4",
-            "font_size": "medium"
-          }
-        },
-        "quote_2": {
-          "type": "quote",
-          "settings": {
-            "quote": "<p>“Add a quote from a customer or press about your store and products.”</p>",
-            "title": "Source",
-            "quote_tag": "h4",
-            "font_size": "medium"
-          }
-        }
-      },
-      "block_order": ["quote_1", "quote_2"],
+    "promotion_bar_7HHPaC": {
+      "type": "promotion-bar",
       "settings": {
-        "autoplay_enabled": true,
-        "autoplay_delay": 7,
-        "pagination_style": "logos",
-        "font_choice": "heading",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "image_hero_2": {
-      "type": "image-hero",
-      "blocks": {
-        "text_1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Text</p>",
-            "text_font_class": "fs-body-200"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Video hero",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-1"
-          }
-        },
-        "text_2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Display an autoplay video (without sound) paired with promotional text</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "link_text": "Button",
-            "button_style": "btn--secondary"
-          }
-        }
-      },
-      "block_order": ["text_1", "heading", "text_2", "button"],
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 90,
-        "mobile_height": 90,
-        "focal_point": "center",
-        "mobile_focal_point": "center",
-        "media_link": "",
-        "text_position": "flex-start_flex-start",
-        "text_position_mobile": "center_center",
+        "min_height": 60,
+        "min_height_mobile": 60,
+        "heading": "The Mopio Edit",
+        "text": "<p><strong>5 Arch Ideas for Your Home</strong></p>",
+        "link": "shopify://blogs/the-mopio-edit/stay-ahead-of-the-curve-5-arch-ideas-for-your-home",
+        "link_text": "Read Now",
+        "button_style": "btn--callout",
+        "image": "shopify://shop_images/Lauren-Arch-Tall-Cabinet-Black-Square-Set_7.jpg",
+        "mobile_image": "shopify://shop_images/Lauren-Arch-Tall-Cabinet-Black-Square-Set_7.jpg",
+        "focal_point": "image_presentation",
+        "mobile_focal_point": "image_presentation",
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
+        "background_color": "#c51c26",
         "color_overlay": "#000000",
-        "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.35) 80%, rgba(0, 0, 0, 0) 100%)",
-        "overlay_opacity": 20,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-top-only"
+        "color_overlay_gradient": "",
+        "overlay_opacity": 42,
+        "enable_animation": false,
+        "full_width": true,
+        "section_padding": "section--vertical-padding-none"
       }
     },
-    "multi_column_1": {
-      "type": "multi-column",
-      "blocks": {
-        "column": {
-          "type": "column",
-          "settings": {
-            "accent": "Accent",
-            "heading": "Column",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-1-base",
-            "text": "<p>Use columns with text, images, or icons to focus on features of your product or store.</p>",
-            "text_font_class": "fs-body-100",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "Button",
-            "button_style": "btn--callout"
-          }
-        },
-        "image": {
-          "type": "image_column",
-          "settings": {
-            "image_width": 100,
-            "aspect_ratio": "natural",
-            "enable_image_crop_circle": false,
-            "focal_point": "image_presentation",
-            "image_position": "above_text",
-            "image_link": "",
-            "small_caption": "",
-            "accent": "",
-            "heading": "",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "",
-            "text_font_class": "fs-body-100",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column": {
-          "type": "icon_column",
-          "disabled": true,
-          "settings": {
-            "icon": "plant",
-            "icon_width": 50,
-            "icon_width_mobile": 50,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post.</p>",
-            "text_font_class": "fs-body-100",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": ["column", "image", "icon_column"],
+    "ff902381-fd0d-4efa-8c40-7468526a4ec7": {
+      "type": "custom-liquid",
       "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "subheading": "",
-        "heading_font_class": "fs-heading-3-base",
-        "heading_alignment": "left",
-        "content_vertical_alignment": "top",
-        "content_background_padding": "large",
-        "columns": "2",
-        "column_spacing": 48,
-        "row_spacing": 48,
-        "column_alignment": "left",
-        "enable_slider_mobile": false,
-        "columns_mobile": "1",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": false,
-        "background_color": "#f7f7e8",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
+        "custom_liquid": "<div class=\"elfsight-sapp-cbab8694-4667-4f29-81a1-13a7e463a5da\"></div>",
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "blog_posts": {
-      "type": "blog-posts",
+    "17282927991fc56da0": {
+      "type": "apps",
       "blocks": {
-        "article_1": {
-          "type": "article",
+        "forms_inline_qAVchd": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
-            "article": ""
-          }
-        },
-        "article_2": {
-          "type": "article",
-          "settings": {
-            "article": ""
-          }
-        }
-      },
-      "block_order": ["article_1", "article_2"],
-      "settings": {
-        "heading": "Blog posts",
-        "subheading": "",
-        "button_link": "",
-        "link_text": "View all posts",
-        "display_type": "all",
-        "blog": "",
-        "max_articles": 2,
-        "show_tags": true,
-        "show_author": false,
-        "show_date": true,
-        "show_excerpt": true,
-        "show_featured_image": true,
-        "aspect_ratio": "square",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "multi_column_2": {
-      "type": "multi-column",
-      "blocks": {
-        "icon_column_1": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_2": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_3": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_4": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
+            "form_id": "198008",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#b58840",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
           }
         }
       },
       "block_order": [
-        "icon_column_1",
-        "icon_column_2",
-        "icon_column_3",
-        "icon_column_4"
+        "forms_inline_qAVchd"
       ],
+      "disabled": true,
       "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "subheading": "",
-        "heading_font_class": "fs-heading-3-base",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "medium",
-        "columns": "4",
-        "column_spacing": 28,
-        "row_spacing": 28,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "2",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": false,
-        "background_color": "#f7f7e8",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
+        "heading": "App section",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -891,22 +827,18 @@
     }
   },
   "order": [
-    "image_hero_split",
-    "scrolling_content",
-    "rich_text",
-    "collection_list_slider",
-    "countdown_bar",
-    "image_hero_1",
-    "featured_collection_slider_1",
-    "sales_banner",
-    "shoppable_feature",
-    "video_hero",
-    "grid",
-    "featured_collection_slider_2",
-    "quotes",
-    "image_hero_2",
-    "multi_column_1",
-    "blog_posts",
-    "multi_column_2"
+    "09be2396-b4c3-4d20-9815-21341fb07499",
+    "countdown_bar_AQ7Tm6",
+    "1743491136374dcd35",
+    "grid_qgLk9B",
+    "featured_collection_slider_nJeBHi",
+    "174313057553cff3f4",
+    "d71df2af-ba99-428a-9772-57ebe99ef94d",
+    "1655855558c1ac2348",
+    "gallery_carousel_7j4gmf",
+    "1743490493f01e66f6",
+    "promotion_bar_7HHPaC",
+    "ff902381-fd0d-4efa-8c40-7468526a4ec7",
+    "17282927991fc56da0"
   ]
 }

@@ -1,5 +1,5 @@
 {{ 'partial-shopify-product-reviews.css' | asset_url | stylesheet_tag }}
-
+{{ 'component-product-description.css' | asset_url | stylesheet_tag }}
 {% liquid
   assign current_variant = product.selected_or_first_available_variant
 
@@ -530,6 +530,7 @@
           column: 'left',
           price_content_type: price_content_type,
           custom_price_content: custom_price_content
+          aspect_ratio: image_aspect_ratio
         -%}
       {%- endcapture %}
 
@@ -610,6 +611,14 @@
     {%- endunless %}
   </div>
 </div>
+<div class="mopio-product__modal-container" id="mopio-product__modal-container">
+  <div class="mopio-product__modal-content">
+    <div class="mopio-product__modal-content-inner" id="mopio-product__modal-content-inner">
+      
+    </div>
+    <div class="mopio-product__modal-close-icon" id="mopio-product__modal-close-icon">✕</div>
+  </div>
+</div>
 
 {%- assign models = product.media | where: 'media_type', 'model' | json -%}
 
@@ -617,6 +626,7 @@
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)}
   ShopifyXR('addModels', {{ models }});
 </script>
+<script src="{{ 'product-description.js' | asset_url }}" defer="defer"></script>
 
 {% unless product == empty -%}
   <script type="application/json" id="ProductJson-{{ section.id }}">
@@ -661,7 +671,114 @@
     ]
   }
 </script>
+<script>
+    (function(){
 
+        // 数据
+        const productDesc = `{{ product.description }}`;
+        const product = {{ product | json }};
+        const productVariants = {{ product.variants | json }};
+        const productOptions = {{ product.options | json }};
+
+         const productVariantsCustom = [
+          {% for v in product.variants %}
+            {
+              id: {{ v.id }},
+              var_description: `{{ v.metafields.custom.var_description | metafield_tag }}`
+            },
+          {% endfor %}
+        ]; 
+        console.log('product:', product);
+        console.log(productVariants)
+        console.log(productOptions)
+        console.log(productVariantsCustom)
+        console.log(productDesc)
+        // dom元素
+        const mobile_panelHeading = document.querySelector('.for-mobile .mopio-panel .mopio-panel-heading');
+        const mobile_panelContent = document.querySelector('.for-mobile .mopio-panel .mopio-panel-content');
+        const mobile_headIcon = document.querySelector('.for-mobile .mopio-panel .mopio-panel-heading-icon');
+
+        const desktop_panelHeading = document.querySelector('.for-desktop .mopio-panel .mopio-panel-heading');
+        const desktop_panelContent = document.querySelector('.for-desktop .mopio-panel .mopio-panel-content');
+        const desktop_headIcon = document.querySelector('.for-desktop .mopio-panel .mopio-panel-heading-icon');
+
+        const cus_panelHeadings = [mobile_panelHeading, desktop_panelHeading];
+        const cus_panelContents = [mobile_panelContent, desktop_panelContent];
+        const cus_headIcons = [mobile_headIcon, desktop_headIcon]
+        
+
+        //获取当前variantId
+        const getCurVariantId = ()=>{
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get('variant') || null;
+        }
+
+        //组件内的初始variantId
+        const initialVariantId = getCurVariantId() || productVariants[0].id
+        let curVariantId = initialVariantId
+        
+        //监听路由的handler
+        const variantChangeHandler = (e)=>{
+          // console.log('路由变化')
+          // 在PDP中
+          const pathName = window.location.pathname
+          if(pathName.startsWith('/products/') || pathName.startsWith('/collections/')){
+            // 获取当前URL中的search参数
+            const updatedVariantId = getCurVariantId()
+      
+            // 检查变化
+            if(!updatedVariantId){
+              updatedVariantId = initialVariantId
+            }
+            if (updatedVariantId !== curVariantId) {
+              // console.log('id参数已变化：', updatedVariantId);
+              curVariantId = updatedVariantId;
+              targetVariant = productVariantsCustom.find(v=>v.id+"" === curVariantId)
+              console.log(targetVariant)
+              // 修改dom
+              if(targetVariant){
+                if(targetVariant.var_description){
+                  cus_panelContents.forEach(panel=>{
+                    panel.innerHTML = targetVariant.var_description
+                  })
+                }else{
+                  cus_panelContents.forEach(panel=>{
+                    panel.innerHTML = productDesc
+                  })
+                  
+                }
+                
+              }
+              
+            }
+     
+          }
+            
+            
+        }
+      
+        // 监听
+        window.addEventListener("pushState", variantChangeHandler)
+        window.addEventListener("replaceState", variantChangeHandler)
+        window.addEventListener('popstate', variantChangeHandler)
+
+        // 为每个面板的标题添加点击事件
+        cus_panelHeadings.forEach((heading, i)=>{
+          heading.addEventListener('click', ()=> {
+            //console.log('点击了--');
+            // 切换内容区域的显示状态
+            if(cus_panelContents[i].style.display === 'block'){
+              cus_panelContents[i].style.display = 'none';
+              cus_headIcons[i].style.rotate = ''
+            }else{
+              cus_panelContents[i].style.display = 'block';
+              cus_headIcons[i].style.rotate = '180deg'
+            }
+          });
+        })
+          
+    })()
+</script>
 {% schema %}
 {
   "name": "t:sections.main_product_overview.name",

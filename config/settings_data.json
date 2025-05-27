@@ -8,7 +8,187 @@
  * ------------------------------------------------------------
  */
 {
-  "current": "Vogue",
+  "current": {
+    "color_background_body": "#ffffff",
+    "color_text_link": "#000000",
+    "color_text": "#111111",
+    "color_border": "#aaaaaa",
+    "color_header_text": "#000000",
+    "color_header_bg": "#ffffff",
+    "color_text_footer": "#ffffff",
+    "color_background_footer": "#000000",
+    "color_background_button": "#111111",
+    "color_text_button": "#ffffff",
+    "color_products_sale_price": "#A70100",
+    "color_products_stock_good": "#3C9342",
+    "color_products_stock_medium": "#b58840",
+    "font_logo": "nunito_sans_n4",
+    "capitalize_logo": false,
+    "logo_base_size": 30,
+    "logo_mobile_base_scale": 50,
+    "font_heading": "nunito_sans_n6",
+    "capitalize_headings": false,
+    "heading_letter_spacing": 10,
+    "heading_base_size": 36,
+    "heading_mobile_base_scale": 70,
+    "font_body": "open_sans_n4",
+    "body_letter_spacing": 0,
+    "body_base_size": 15,
+    "body_mobile_base_scale": 80,
+    "capitalize_navigation": false,
+    "navigation_letter_spacing": -25,
+    "navigation_base_size": 14,
+    "product_listing_title_uppercase": false,
+    "product_listing_title_letter_spacing": 50,
+    "capitalize_buttons": false,
+    "buttons_letter_spacing": 50,
+    "enable_page_transitions": false,
+    "enable_section_animations": false,
+    "swatch_options": "Style",
+    "swatch_shape": "square",
+    "custom_swatch_colors": "",
+    "chip_options": "",
+    "zero_dollar_product_price_display": "show",
+    "sale_badge_format": "minus_percent",
+    "custom_product_badge_group_1_tag_names": "Responsible",
+    "custom_product_badge_group_1_color": "#3C9342",
+    "custom_product_badge_group_2_tag_names": "Best seller",
+    "custom_product_badge_group_2_color": "#7e6b45",
+    "custom_product_badge_group_3_tag_names": "New",
+    "custom_product_badge_group_3_color": "#000000",
+    "custom_product_badge_group_4_tag_names": "",
+    "uppercase_badges": true,
+    "product_listing_show_vendor": false,
+    "enable_quick_view": false,
+    "product_listing_aspect_ratio": "square",
+    "product_listing_show_rating": false,
+    "product_listing_show_discount": true,
+    "product_listing_discount_format": "sale_text",
+    "product_listing_show_custom_badges": true,
+    "product_listing_badge_position": "top_left",
+    "cart_item_aspect_ratio": "natural",
+    "enable_free_shipping_bar": false,
+    "free_shipping_threshold": "250",
+    "enable_cross_sells": true,
+    "cross_sells_heading": "People also bought",
+    "cross_sells_max_products": 9,
+    "cross_sells_recommendations_type": "collection",
+    "collection": "bestsellers",
+    "quick_search_product_style": "columns",
+    "quick_search_show_vendor": false,
+    "quick_search_suggested_heading": "Popular searches",
+    "quick_search_suggested_links": [
+      "living-room",
+      "dining-room",
+      "bedroom",
+      "macy",
+      "blake"
+    ],
+    "social_facebook_link": "https://www.facebook.com/mopioinc",
+    "social_instagram_link": "https://www.instagram.com/mopioinc/",
+    "social_linkedin_link": "",
+    "social_pinterest_link": "https://www.pinterest.com/MopioInc/",
+    "social_tiktok_link": "https://www.tiktok.com/@mopioinc",
+    "social_twitter_link": "#",
+    "social_youtube_link": "https://www.youtube.com/@mopioinc",
+    "favicon": "shopify://shop_images/Shopify_Mopio_Favicon_WhiteBase_688f9b9c-182c-418d-9713-cb2239d6da7b.png",
+    "enable_back_to_top": true,
+    "back_to_top_position": "bottom-right",
+    "checkout_logo_image": "shopify://shop_images/Mopio_Website_Logo_R_150x50_c9bb0572-4987-4638-b93c-3b7b245223f3.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_accent_color": "#b58840",
+    "checkout_button_color": "#b58840",
+    "content_for_index": [],
+    "blocks": {
+      "6478312753674380289": {
+        "type": "shopify://apps/gempages-landing-page-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": false,
+        "settings": {}
+      },
+      "17920835415960095625": {
+        "type": "shopify://apps/swatch-king-variants-options/blocks/variant-swatch-king/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
+        "disabled": false,
+        "settings": {
+          "alignment": "left",
+          "swatch_location": "After image",
+          "switch_on_hover": true,
+          "preselect_variant": false
+        }
+      },
+      "1910501027098541543": {
+        "type": "shopify://apps/starapps-variant-image/blocks/starapps-via-embed/2a01d106-3d10-48e8-ba53-5cb971217ac4",
+        "disabled": false,
+        "settings": {}
+      },
+      "2153490007123654574": {
+        "type": "shopify://apps/consentmo-gdpr/blocks/gdpr_cookie_consent/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": true,
+        "settings": {}
+      },
+      "10142937387702430166": {
+        "type": "shopify://apps/preorder-notify-me-pre-order-t/blocks/app-embed/bf6c109b-79b5-457c-8752-0e5e9e9676e7",
+        "disabled": true,
+        "settings": {}
+      },
+      "7867184527792707249": {
+        "type": "shopify://apps/sc-product-options/blocks/app-embed/873c9b74-306d-4f83-b58b-a2f5043d2187",
+        "disabled": true,
+        "settings": {}
+      },
+      "16420725565331586169": {
+        "type": "shopify://apps/appio-amazon-reviews/blocks/integration/569167b3-e5d6-4314-9866-f51281b506d7",
+        "disabled": false,
+        "settings": {}
+      },
+      "16225679183443353566": {
+        "type": "shopify://apps/pixiehog/blocks/posthog_js_web/3bc10c13-7b55-491e-8df6-d5677acf3250",
+        "disabled": false,
+        "settings": {}
+      },
+      "140237710760941474": {
+        "type": "shopify://apps/persistent-cart/blocks/script_js/4ce05194-341e-4641-aaf4-5a8dad5444cb",
+        "disabled": false,
+        "settings": {}
+      },
+      "17870575607751922699": {
+        "type": "shopify://apps/platmart-swatches/blocks/product-swatches/3d4801b8-13e2-488f-8d06-69ca04fc155d",
+        "disabled": false,
+        "settings": {}
+      },
+      "16622749705097440781": {
+        "type": "shopify://apps/platmart-swatches/blocks/collection-swatches/3d4801b8-13e2-488f-8d06-69ca04fc155d",
+        "disabled": false,
+        "settings": {}
+      },
+      "7520711097648287086": {
+        "type": "shopify://apps/lookfy-gallery/blocks/app-embed/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
+        "disabled": false,
+        "settings": {}
+      },
+      "7902831097370503076": {
+        "type": "shopify://apps/delivery-date-eta/blocks/estimated-delivery-days/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
+        "disabled": false,
+        "settings": {}
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "11432920177897217407": {
+        "type": "shopify://apps/epa-easy-product-addons/blocks/speedup_link/0099190e-a0cb-49e7-8d26-026c9d26f337",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
   "presets": {
     "Vogue": {
       "color_background_body": "#fcfcf9",
@@ -254,5 +434,10 @@
       "social_tiktok_link": "#",
       "social_twitter_link": "#"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".timesact-badge-ribbon {overflow: visible !important;}"
+    ]
   }
 }

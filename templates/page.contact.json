@@ -41,7 +41,11 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -70,6 +74,23 @@
           }
         },
         "block-2": {
+          "type": "select",
+          "settings": {
+            "title": "Subject",
+            "width": "full",
+            "option_1": "Option one",
+            "option_2": "Option two",
+            "option_3": "Option three",
+            "option_4": "",
+            "option_5": "",
+            "option_6": "",
+            "option_7": "",
+            "option_8": "",
+            "option_9": "",
+            "option_10": ""
+          }
+        },
+        "block-3": {
           "type": "text",
           "settings": {
             "title": "Phone number",
@@ -77,7 +98,7 @@
             "width": "full"
           }
         },
-        "block-3": {
+        "block-4": {
           "type": "text_area",
           "settings": {
             "title": "Message",
@@ -87,7 +108,7 @@
             "width": "full"
           }
         },
-        "block-4": {
+        "block-5": {
           "type": "submit",
           "settings": {
             "title": "Submit",
@@ -96,7 +117,14 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3", "block-4"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ],
       "settings": {
         "alignment": "left_left",
         "heading": "Contact us",
@@ -128,7 +156,10 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1"],
+      "block_order": [
+        "block-0",
+        "block-1"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -178,7 +209,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "title": "",
         "heading_font_class": "fs-heading-3-base",

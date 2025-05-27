@@ -1,1 +1,676 @@
+/* Contact Freshdesk Form Page */
+.contact-form__input-wrapper > .select-wrapper {
+  margin-top: var(--spacing-2);
+}
 
+/* Contact Us Page */
+#mopio_contact_form_wejxg {
+  max-width: 900px !important;
+}
+
+.mopio-contact-container {
+  width: 100%;
+  max-width: 900px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mopio-contact-container div {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-contact-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-contact-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-contact-container ul li {
+  list-style: none;
+}
+
+.mopio-contact-container .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  max-width: 900px !important;
+}
+
+.mopio-contact-container .row .field {
+  position: relative;
+  flex: 1;
+}
+
+.mopio-contact-container .row .field input {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 15px 16px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mopio-contact-container .row .field textarea {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 15px 16px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mopio-contact-container .row .submit-btn-wrapper {
+  background-color: #b79b7d;
+  border: 1px solid #b79b7d;
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mopio-contact-container .row .submit-btn {
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mopio-contact-container .spinner {
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255);
+  border-left-color: rgba(255, 255, 255, 0);
+  animation: mopio_loading 1s 0s infinite linear;
+  vertical-align: middle;
+}
+
+@keyframes mopio_loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mopio-contact-container .margin-right {
+  margin-right: 15px;
+}
+
+.mopio-contact-container .flex-center {
+  justify-content: center;
+}
+
+.mopio-contact-container .flex-left {
+  justify-content: flex-start;
+}
+
+.mopio-contact-container .select_wrap {
+  flex: 1;
+  position: relative;
+  user-select: none;
+}
+
+.mopio-contact-container .select_wrap .default_option {
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1.5rem;
+  padding: 15px 16px;
+  text-align: left;
+  font-size: 16px;
+  max-width: 800px !important;
+}
+
+.mopio-contact-container .select_wrap .default_option:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-color: transparent transparent #555555 #555555;
+  transform: rotate(-45deg);
+}
+
+.mopio-contact-container .select_wrap .select_ul {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.mopio-contact-container .select_wrap .select_ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.mopio-contact-container .select_wrap .select_ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mopio-contact-container .select_wrap .select_ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mopio-contact-container .select_wrap .select_ul li:hover {
+  background: #fff4dd;
+}
+
+.mopio-contact-container .select_wrap .option {
+  display: flex;
+  align-items: center;
+}
+
+.mopio-contact-container .select_wrap.active .select_ul {
+  display: block;
+}
+
+#select_type.require::before {
+  content: "Please select one type";
+  position: absolute;
+  left: 5px;
+  bottom: -22px;
+  color: #d45b37;
+  font-size: 14px;
+}
+
+.mopio-contact-container .row .field.require::before {
+  content: "This field is mandatory";
+  position: absolute;
+  left: 5px;
+  bottom: -22px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-contact-container .row .field.email-invalid::before {
+  content: "Invalid email address​";
+  position: absolute;
+  left: 5px;
+  bottom: -22px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-contact-container .row .field.phone-invalid::before {
+  content: "Invalid email phone number";
+  position: absolute;
+  left: 5px;
+  bottom: -22px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-contact-container .contact_number_wrap.require::before {
+  content: "Please provide a valid number";
+  position: absolute;
+  left: 5px;
+  bottom: -22px;
+  color: #d45b37;
+  font-size: 14px;
+}
+
+.mopio-contact-container .select_wrap.active .default_option::before {
+  top: 25px;
+  transform: rotate(-225deg);
+}
+
+.mopio-contact-container #existing_checkbox_g3tfc {
+  margin-left: 20px;
+}
+
+.mopio-contact-container .hidden {
+  display: none !important;
+}
+
+.mopio-contact-container .h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.mopio-contact-container .mycheck {
+  font-size: 0;
+}
+
+.mopio-contact-container .mycheck label {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #aaa;
+  position: relative;
+  border-radius: 15px;
+  transition: background 0.5s;
+}
+
+.mopio-contact-container .mycheck label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background: #aaa;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transition: all 0.5s;
+}
+
+.mopio-contact-container .mycheck input:checked ~ label {
+  background: #b79b7d;
+  border: 1px solid #b79b7d;
+}
+
+.mopio-contact-container .mycheck input:checked ~ label::before {
+  left: 34px; /* 覆盖原来的left */
+  background: #fff;
+}
+
+@media (max-width: 420px) {
+  .mopio-contact-container .row .field {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 794px) {
+  .mopio-contact-container .row .field {
+    min-width: 375px;
+    max-width: 794px !important;
+  }
+}
+
+@media (min-width: 795px) {
+  #mopio_contact_form_wejxg {
+    width: 750px;
+  }
+  .mopio-contact-container .row .field {
+    min-width: 360px;
+    max-width: 795px !important;
+  }
+}
+
+@media (max-width: 794px) {
+  .mopio-contact-container .margin-right {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .mopio-contact-container .row {
+    align-items: center;
+  }
+}
+
+/* Mopio Club Page */
+#mopio_club_form_wejxg {
+  max-width: 900px !important;
+}
+
+.mopio-club-container {
+  width: 100%;
+  max-width: 900px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mopio-club-container div {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-club-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-club-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.mopio-club-container ul li {
+  list-style: none;
+}
+
+.mopio-club-container .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  max-width: 900px !important;
+}
+
+.mopio-club-container .row .field {
+  position: relative;
+  flex: 1;
+}
+
+.mopio-club-container .row .field input {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.5rem;
+  padding: 15px 16px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mopio-club-container .row .field.require::before {
+  content: "This field is mandatory";
+  position: absolute;
+  left: 5px;
+  top: 58px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-club-container .row .field.email-invalid::before {
+  content: "Invalid email address​";
+  position: absolute;
+  left: 5px;
+  top: 58px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-club-container .row .field.order-invalid::before {
+  content: "Invalid order ID​";
+  position: absolute;
+  left: 5px;
+  top: 58px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-club-container .row .submit-btn-wrapper {
+  background-color: #b79b7d;
+  border: 1px solid #b79b7d;
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mopio-club-container .row .submit-btn {
+  display: inline-block;
+  height: 40px;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mopio-club-container .spinner {
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255);
+  border-left-color: rgba(255, 255, 255, 0);
+  animation: mopio_loading 1s 0s infinite linear;
+  vertical-align: middle;
+}
+
+@keyframes mopio_loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mopio-club-container .margin-right {
+  margin-right: 15px;
+}
+
+.mopio-club-container .flex-center {
+  justify-content: center;
+}
+
+.mopio-club-container .flex-left {
+  justify-content: flex-start;
+}
+
+.mopio-club-container .select_wrap {
+  flex: 1;
+  position: relative;
+  user-select: none;
+}
+
+.mopio-club-container .select_wrap .default_option {
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1.5rem;
+  padding: 15px 16px;
+  text-align: left;
+  font-size: 16px;
+  max-width: 800px !important;
+}
+
+.mopio-club-container .select_wrap .default_option:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-color: transparent transparent #555555 #555555;
+  transform: rotate(-45deg);
+}
+
+.mopio-club-container .select_wrap .select_ul {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.mopio-club-container .select_wrap .select_ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.mopio-club-container .select_wrap .select_ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mopio-club-container .select_wrap .select_ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mopio-club-container .select_wrap .select_ul li:hover {
+  background: #fff4dd;
+}
+
+.mopio-club-container .select_wrap .option {
+  display: flex;
+  align-items: center;
+}
+
+.mopio-club-container .select_wrap.active .select_ul {
+  display: block;
+}
+
+.mopio-club-container .select_wrap.require::before {
+  content: "Please select one marketplace";
+  position: absolute;
+  left: 5px;
+  top: 58px;
+  color: #d45b37;
+  font-size: 15px;
+}
+
+.mopio-club-container .select_wrap.active .default_option::before {
+  top: 25px;
+  transform: rotate(-225deg);
+}
+
+.mopio-club-container #existing_checkbox_g3tfc {
+  margin-left: 20px;
+}
+
+.mopio-club-container .hidden {
+  display: none !important;
+}
+
+.mopio-club-container .h1 {
+  font-size: 22px;
+}
+
+.mopio-club-container .mycheck-label {
+  text-align: left;
+  word-wrap: break-word;
+  flex: 1;
+  max-width: 350px;
+}
+
+.mopio-club-container .mycheck {
+  font-size: 0;
+}
+
+.mopio-club-container .mycheck input {
+  display: none;
+}
+
+.mopio-club-container .mycheck label {
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #aaa;
+  position: relative;
+  border-radius: 15px;
+  transition: background 0.5s;
+}
+
+.mopio-club-container .mycheck label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background: #aaa;
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  transition: all 0.5s;
+}
+
+.mopio-club-container .mycheck input:checked ~ label {
+  background: #b79b7d;
+  border: 1px solid #b79b7d;
+}
+
+.mopio-club-container .mycheck input:checked ~ label::before {
+  left: 34px; /* 覆盖原来的left */
+  background: #fff;
+}
+
+@media (max-width: 420px) {
+  .mopio-club-container .row .field {
+    min-width: 300px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 794px) {
+  .mopio-club-container .row .field {
+    min-width: 375px;
+    max-width: 794px !important;
+  }
+}
+@media (min-width: 795px) {
+  #mopio_club_form_wejxg {
+    width: 750px;
+  }
+  .mopio-club-container .row .field {
+    min-width: 360px;
+    max-width: 795px !important;
+  }
+}
+
+@media (max-width: 794px) {
+  .mopio-club-container .margin-right {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .mopio-club-container .row {
+    align-items: center;
+  }
+}

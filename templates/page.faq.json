@@ -47,7 +47,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -75,7 +80,10 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1"],
+      "block_order": [
+        "block-0",
+        "block-1"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": false,
@@ -117,7 +125,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "title": "",
         "heading_font_class": "fs-heading-3-base",
@@ -148,7 +161,10 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1"],
+      "block_order": [
+        "block-0",
+        "block-1"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": false,
@@ -190,7 +206,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "title": "",
         "heading_font_class": "fs-heading-3-base",
@@ -221,7 +242,10 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1"],
+      "block_order": [
+        "block-0",
+        "block-1"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": false,
@@ -263,7 +287,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "title": "",
         "heading_font_class": "fs-heading-3-base",
@@ -289,7 +318,7 @@
         "block-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Don't hesitate to contact us</p>",
+            "text": "<p>Don't hestitate to contact us</p>",
             "text_font_class": "fs-body-100"
           }
         },
@@ -307,7 +336,12 @@
           }
         }
       },
-      "block_order": ["block-0", "block-1", "block-2", "block-3"],
+      "block_order": [
+        "block-0",
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,

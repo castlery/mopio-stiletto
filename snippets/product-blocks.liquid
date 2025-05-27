@@ -112,12 +112,7 @@
         {%- endif -%}
 
       {%- when 'description' -%}
-        {%-
-          render 'product-block-description' with
-          product: prod,
-          block: block,
-          block_settings: block.settings,
-        -%}
+        {% render 'product-description' with product: product, block: block %}
 
       {%- when 'product_callouts' -%}
         {%- render 'product-block-callouts' with block: block, block_settings: block.settings %}

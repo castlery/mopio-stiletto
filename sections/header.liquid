@@ -1,4 +1,23 @@
+{% style  %} 
+  .header_len {
+    display: flex; 
+    flex-direction: column;
+    column;grid-column: 1 / -1;
+  }
+  .header__links.header__links-primary{
+    flex-grow:1
+  }
+  .header__links-list.fs-navigation-base{
+    flex:1;
+    justify-content:space-between;
+  }
+  
+{% endstyle %}
 {%- liquid
+assign account_visible = false
+if shop.customer_accounts_enabled
+  assign account_visible = true
+endif
   assign enable_transparent_template_list = section.settings.enable_transparent_template_list | downcase | split: ', '
   assign transparent_header_enabled = false
   if section.settings.enable_transparent_on_home and template.name == 'index'
@@ -156,6 +175,38 @@
 {%- endcapture -%}
 
 {%- capture account_icon -%}
+  <div class="header-user">
+    <div class="dropdown">
+        <button class="dropdown-toggle">
+          <div class="user-icon">
+            {% if customer %}
+              {% render 'icon-button' with icon: 'header-account' %}
+            {% else %}
+              <a
+                class="header__icon-touch header__icon-touch--account"
+                href="{{ routes.account_url }}"
+                aria-label="{{ 'general.accessibility.go_account' | t }}"
+              >
+                {% render 'icon-button' with icon: 'header-account' %}
+              </a>
+            {% endif %}
+          </div>
+        </button>
+        {%- if customer -%}
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="{{ routes.account_url }}">{{ 'customer.menu.account' | t }}</a></li>
+              <li><a href="/pages/order-v2">{{ 'customer.menu.orders' | t  }}</a></li>
+              <li><a href="{{ routes.account_addresses_url }}">{{ 'customer.menu.addresses' | t }}</a></li>
+              <li><a href="{{ routes.account_logout_url }}">{{ 'customer.menu.logout' | t }}</a></li>
+            </ul>
+          </div>
+        {%- endif -%}
+    </div>
+  </div>
+{%- endcapture -%}
+
+{%- capture account_icon_v2 -%}
   <a
     class="header__icon-touch header__icon-touch--account"
     href="{{ routes.account_url }}"
@@ -365,53 +416,27 @@
       </div>
     </div>
 
-    {%- if logo_position == 'center' and navigation_position == 'below' -%}
-      <div class="header__row header__row-desktop logo-only">
-        {{ header_logo }}
-      </div>
-    {%- endif -%}
-
-    {%- capture lower_left_content -%}
-      {%- if logo_position == 'center' and navigation_position == 'below' -%}
-        {{ search_icon }}
-      {%- elsif logo_position == 'center' and navigation_position == 'left' -%}
-        {{ primary_nav }}
-      {%- elsif logo_position == 'left' and navigation_position == 'below' -%}
-        {{ primary_nav }}
-      {%- elsif logo_position == 'left' and navigation_position == 'left' -%}
-        {{ header_logo }}
-        {{ primary_nav }}
-      {%- elsif logo_position == 'left' and navigation_position == 'center' -%}
-        {{ header_logo }}
-      {%- endif -%}
-    {%- endcapture -%}
-
-    <div class="header__row header__row-desktop lower {% if logo_position == 'center' or navigation_position == 'center' %}three-segment{% endif %}">
-      <div class="header__row-segment header__row-segment-desktop left {% if lower_left_content contains "header__links-list" %}contains-nav{% endif %}">
-        {{ lower_left_content }}
-      </div>
+  
+    <div class="header__row header__row-desktop lower {% if logo_position == 'center' %}three-segment{% endif %}">
+      <div class="header_len">
 
       {%- if logo_position == 'center' and navigation_position == 'below' -%}
-        {{ primary_nav }}
-      {%- elsif logo_position == 'center' and navigation_position == 'left' -%}
-        {{ header_logo }}
-      {%- elsif logo_position == 'left' and navigation_position == 'center' -%}
-        {{ primary_nav }}
-      {%- endif -%}
-
-      <div class="header__row-segment header__row-segment-desktop right">
-        {%- unless logo_position == 'center' and navigation_position == 'below' -%}
-          {{ search_icon }}
-        {%- endunless -%}
-        {%- if shop.customer_accounts_enabled -%}
+        <div class="header__row header__row-desktop ">
+          {{ header_logo }} 
+          {% render 'quick-search-input' %}
+          {%- if shop.customer_accounts_enabled -%}
           {{ account_icon }}
         {%- endif -%}
         {{ cart_icon }}
       </div>
+        {%- endif -%}
+        {{ primary_nav }}
+      </div>
+
     </div>
 
     <div class="header__row header__row-mobile {% if logo_position == 'center' %}three-segment{% endif %}">
-      {%- if logo_position == 'center' -%}
+  
         <div class="header__row-segment left">
           {{ menu_icon }}
         </div>
@@ -419,24 +444,14 @@
         {{ header_logo }}
 
         <div class="header__row-segment right">
-          {{ search_icon }}
+    
           {%- if shop.customer_accounts_enabled -%}
             {{ account_icon }}
           {%- endif -%}
           {{ cart_icon }}
         </div>
-      {%- else -%}
-        <div class="header__row-segment left">
-          {{ header_logo }}
-        </div>
-
-        <div class="header__row-segment right">
-          {{ search_icon }}
-          {{ cart_icon }}
-          {{ menu_icon }}
-        </div>
-      {%- endif -%}
-    </div>
+        {% render 'quick-search-input' %}
+        <br/>
   </div>
 
   <div class="no-js-menu no-js-menu--desktop">
@@ -1060,3 +1075,6 @@
   ]
 }
 {% endschema %}
+{% include 'alireviews_aggregateRating' %}
+{{ 'jquery-min.js' | asset_url | script_tag }}
+{{ 'quick-search.js' | asset_url | script_tag }}
